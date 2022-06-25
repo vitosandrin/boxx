@@ -1,0 +1,64 @@
+.wrapper_solution {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 2.125rem;
+
+}
+
+.wrapper_solution .container_solution {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    padding: 2rem;
+}
+
+.wrapper_solution .title_solution {
+    font-weight: 700;
+    font-size: 3rem;
+    color: #e0eff2;
+    text-shadow: -4px 3px 0 #111111, -5px 5px 0 #6200ee;
+}
+
+.wrapper_solution .container_solution .box_solution {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 2rem;
+    border-radius: 1rem;
+
+    background-image: url('../../../../assets/nebula2.webp');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    -webkit-box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+    box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+    
+}
+
+.wrapper_solution .container_solution .box_solution .text_solution {
+    font-weight: 900;
+    font-size: 2rem;
+    text-shadow: 0 0 5px #FFFFFF;
+}
+
+.wrapper_solution .container_solution .box_solution .description_solution {
+    font-size: 1rem;
+    color: #e0eff2;
+    padding: 1rem;
+    border-radius: 2rem;
+    background-color: #6200ee;
+    transition: ease 1s all;
+    cursor: pointer;
+    -webkit-box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+    box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+    
+}
+.wrapper_solution .container_solution .box_solution .description_solution:hover {
+    transform: scale(0.9);
+}
+
+

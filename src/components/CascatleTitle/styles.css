@@ -1,0 +1,30 @@
+.cascate_container {
+    z-index: 1;
+}
+
+.cascate_title {
+    font-weight: 900;
+    text-align: center;
+    font-size: 10rem;
+    color: transparent;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: white;
+    color: #111111;
+    z-index: 1;
+    animation: cascate 2s ease-in-out forwards;
+}
+
+@keyframes cascate {
+    0% {
+        text-shadow: 0px -2px 0px rgba(255, 255, 255, 0.2);
+    }
+
+    75% {
+        text-shadow: 0px -10px 0px white, 0px -20px 0px white;
+    }
+
+    100% {
+        text-shadow: unset;
+    }
+
+}

@@ -1,0 +1,60 @@
+.container_service {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    gap: 3rem;
+}
+
+.container_service .img_service {
+    height: 250px;
+    width: 250px;
+    animation-name: spin;
+    animation-duration: 5000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    /* transform: rotate(3deg); */
+    /* transform: rotate(0.3rad);/ */
+    /* transform: rotate(3grad); */
+    /* transform: rotate(.03turn);  */
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.container_service .title_service {
+    font-weight: 700;
+    font-size: 3rem;
+    color: #e0eff2;
+    text-shadow: -4px 3px 0 #111111, -5px 5px 0 #6200ee;
+}
+
+.container_service .box_service {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    width: 60vw;
+}
+
+.container_service .box_service .description_service {
+    -webkit-box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+    box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+
+    font-size: 1.2rem;
+    padding: 2rem;
+    border-radius: 1rem;
+    transition: ease 1s all;
+}
+
+.container_service .box_service .description_service:hover {
+    transform: scale(1.1);
+}

@@ -1,0 +1,15 @@
+.wrapper_herovideo {
+    max-width: 80vw;
+    max-height: 60vh;
+}
+
+.wrapper_herovideo .container_herovideo {
+    z-index: 0;
+    position: relative;
+}
+
+.wrapper_herovideo .container_herovideo .herovideo {
+    width: 100%;
+    height: 100%;
+    border-radius: 25px;
+}

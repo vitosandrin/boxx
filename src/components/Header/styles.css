@@ -1,0 +1,43 @@
+.mainHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 100%;
+    padding: 1rem 5rem 1rem 5rem;
+
+    position: sticky;
+    top: 0;
+
+    background-color: #111111;
+
+    z-index: 5555;
+
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+}
+
+.logo {
+    box-shadow: #fff;
+    transition: ease 1s all;
+}
+.logo:hover {
+    transform: scale(1.3);
+}
+
+
+.mainHeaderTitle {
+    color: #fff;
+    font-size: 1.3rem;
+
+    user-select: none;
+}
+
+.mainHeaderIcons {
+    display: flex;
+    gap: 1.75rem;
+    transition: ease 0.5s all;
+}
+
+.mainHeaderIcons:hover{
+    transform: scale(1.5);
+}
