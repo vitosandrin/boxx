@@ -29,10 +29,10 @@ const Desenvolvedor = () => {
         <HeroVideo videoSrc={videodev} />
       </div>
       <div className="divider"></div>
-      <Float animate={"up"}>
+      <Float anime={"up"}>
         <MainSection />
       </Float>
-      <Float animate={"right"}>
+      <Float anime={"right"}>
         <InfoSection />
       </Float>
       <div className="divider"></div>

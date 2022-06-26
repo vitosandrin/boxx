@@ -6,7 +6,7 @@ const Float = (props) => {
     //element offsetop é a altura que o elemnto ta do topo
 
     const animeScroll = () => {
-        const windowTop = window.pageYOffset + window.innerHeight * 1;
+        const windowTop = window.pageYOffset + window.innerHeight * 0.5;
 
         item.forEach(element => {
             if (windowTop > element.offsetTop) {
@@ -23,7 +23,7 @@ const Float = (props) => {
         animeScroll();
     });
     return (
-        <div data-anime={props.animate}>
+        <div data-anime={props.anime}>
             {props.children}
         </div>
     )
