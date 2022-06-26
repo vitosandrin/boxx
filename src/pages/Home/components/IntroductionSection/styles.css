@@ -1,7 +1,7 @@
 .container_introduction {
     display: flex;
     gap: 3rem;
-
+    margin-top: 1.2rem;
     text-align: center;
 }
 

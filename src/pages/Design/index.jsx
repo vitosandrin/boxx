@@ -1,5 +1,5 @@
 import './styles.css'
-import video from '../../assets/video/design.webm'
+import video from '../../assets/video/design1.webm'
 
 //Global Components
 import { CascatleTitle, HeroVideo, CarouselComponent, Box, ContactForm, Footer } from '../../components';

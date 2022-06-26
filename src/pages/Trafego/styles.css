@@ -1,0 +1,35 @@
+.body_mkt {
+    background-color: #111111;
+
+    height: clamp(100vh, 100%, 100%);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5rem;
+
+    color: #fff;
+
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.divider {
+    width: 10rem;
+    height: 0.3rem;
+
+    background: #6200ee;
+
+    border-radius: 5rem;
+}
+
+.rec.rec-arrow {
+    visibility: hidden;
+}
+
+.body_mkt .video_mkt{
+    position: relative;
+    bottom: 150px;
+    z-index: 0;
+    max-width: 70vw;
+}

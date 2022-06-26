@@ -20,6 +20,10 @@ const Header = (props) => {
             <Link to={"/design"}>
                 <p>Design</p>
             </Link>
+            
+            <Link to={"/trafego"}>
+                <p>Trafego</p>
+            </Link>
 
             <div className="mainHeaderIcons">
                 <Link to={'/'}>
