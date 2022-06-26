@@ -1,4 +1,6 @@
 import './styles.css'
+import { useEffect } from 'react';
+import { useLocation } from 'react-router-dom';
 import video from '../../assets/video/design1.webm'
 
 //Global Components
@@ -18,6 +20,13 @@ import MainSection from './components/MainSection';
 import InfoSection from './components/InfoSection';
 
 const Design = () => {
+    const routePath = useLocation();
+    const onTop = () => {
+        window.scrollTo(0, 0);
+    }
+    useEffect(() => {
+        onTop()
+    }, [routePath]);
 
     const description = "Prezamos pela autenticidade e originalidade de sua marca, prototipamos projetos únicos e especialmente planejados para suprir necessidades básicas do visual da sua empresa."
 

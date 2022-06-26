@@ -1,4 +1,6 @@
 import './styles.css'
+import { useEffect } from 'react';
+import { useLocation } from 'react-router-dom';
 import videomkt from '../../assets/video/trafego.webm'
 
 //Global Components
@@ -19,6 +21,14 @@ import InfoSection from './components/InfoSection'
 import MainSection from './components/MainSection'
 
 const Trafego = () => {
+    
+    const routePath = useLocation();
+    const onTop = () => {
+        window.scrollTo(0, 0);
+    }
+    useEffect(() => {
+        onTop()
+    }, [routePath]);
 
     const description = "A .boxx é capaz de encontrar e conectar todos potenciais exploráveis singularmente em cada caso.Somos uma empresa que gera autonomia e independência.Nosso foco está em objetividade e qualidade de execução."
 

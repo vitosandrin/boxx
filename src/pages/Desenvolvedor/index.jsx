@@ -1,4 +1,6 @@
 import './styles.css'
+import { useEffect } from 'react';
+import { useLocation } from 'react-router-dom';
 import videodev from '../../assets/video/dev.webm'
 
 //Global Components
@@ -19,6 +21,14 @@ import MainSection from './components/MainSection';
 import InfoSection from './components/InfoSection';
 
 const Desenvolvedor = () => {
+  
+  const routePath = useLocation();
+    const onTop = () => {
+        window.scrollTo(0, 0);
+    }
+    useEffect(() => {
+        onTop()
+    }, [routePath]);
 
   const description = "Desenvolvemos aplicações modularizadas seguindo padrões de componentização e boas práticas de mercado visando sofisticar funcionalidades implementadas, buscando sempre acessibilidade e sucesso das requisições do usuário."
 
