@@ -2,7 +2,15 @@ import './styles.css'
 import videodev from '../../assets/video/dev.webm'
 
 //Global Components
-import { Box, CarouselComponent, CascatleTitle, ContactForm, Footer, HeroVideo } from '../../components';
+import {
+  Box,
+  CarouselComponent,
+  CascatleTitle,
+  ContactForm,
+  Float,
+  Footer,
+  HeroVideo
+} from '../../components';
 import { ToolsDev } from '../../assets/data/dev';
 import Carousel from 'react-elastic-carousel'
 
@@ -11,18 +19,22 @@ import MainSection from './components/MainSection';
 import InfoSection from './components/InfoSection';
 
 const Desenvolvedor = () => {
-  
+
   const description = "Desenvolvemos aplicações modularizadas seguindo padrões de componentização e boas práticas de mercado visando sofisticar funcionalidades implementadas, buscando sempre acessibilidade e sucesso das requisições do usuário."
 
   return (
     <div className="body_dev">
       <CascatleTitle text={"Dev"} />
       <div className="video_dev">
-        <HeroVideo videoSrc={videodev}/>
+        <HeroVideo videoSrc={videodev} />
       </div>
       <div className="divider"></div>
-      <MainSection />
-      <InfoSection />
+      <Float animate={"up"}>
+        <MainSection />
+      </Float>
+      <Float animate={"right"}>
+        <InfoSection />
+      </Float>
       <div className="divider"></div>
       <Carousel
         enableAutoPlay={true}

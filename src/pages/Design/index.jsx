@@ -2,7 +2,14 @@ import './styles.css'
 import video from '../../assets/video/design1.webm'
 
 //Global Components
-import { CascatleTitle, HeroVideo, CarouselComponent, Box, ContactForm, Footer } from '../../components';
+import {
+    CascatleTitle,
+    HeroVideo,
+    CarouselComponent,
+    Box,
+    ContactForm,
+    Footer
+} from '../../components';
 import Carousel from 'react-elastic-carousel'
 import { ToolsDesign } from '../../assets/data/design'
 
@@ -39,7 +46,7 @@ const Design = () => {
             <Box title={"Saiba Mais"} description={description} />
             <div className="divider_design"></div>
             <ContactForm />
-            <Footer />    
+            <Footer />
         </div>
     )
 }

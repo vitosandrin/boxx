@@ -2,17 +2,25 @@ import './styles.css'
 import videomkt from '../../assets/video/trafego.webm'
 
 //Global Components
-import { HeroVideo, Box, ContactForm, CascatleTitle, Footer, CarouselComponent } from '../../components'
+import {
+    HeroVideo,
+    Box,
+    ContactForm,
+    CascatleTitle,
+    Footer,
+    CarouselComponent
+} from '../../components'
+
 import Carousel from 'react-elastic-carousel'
+import { ToolsMkt } from '../../assets/data/trafego'
 
 //Local Components
 import InfoSection from './components/InfoSection'
 import MainSection from './components/MainSection'
-import { ToolsMkt } from '../../assets/data/trafego'
 
 const Trafego = () => {
 
-    const description = "A .boxx é capaz de encontrar e conectar todos potenciais exploráveis singularmente em cada caso. Somos uma empresa que gera autonomia e independência. Nosso foco está em objetividade e qualidade de execução."
+    const description = "A .boxx é capaz de encontrar e conectar todos potenciais exploráveis singularmente em cada caso.Somos uma empresa que gera autonomia e independência.Nosso foco está em objetividade e qualidade de execução."
 
     return (
         <div className="body_mkt">
@@ -36,7 +44,7 @@ const Trafego = () => {
                     )
                 })}
             </Carousel>
-            <Box title={"Saiba Mais"} description={description}/>
+            <Box title={"Saiba Mais"} description={description} />
             <div className="divider"></div>
             <ContactForm />
             <Footer />

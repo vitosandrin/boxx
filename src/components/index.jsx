@@ -8,3 +8,4 @@ export { default as Box } from './Box';
 export { default as ContactForm } from './ContactForm';
 export { default as CarouselComponent } from './Carousel';
 export { default as HeroVideo } from './HeroVideo'
+export { default as Float } from './Float'
