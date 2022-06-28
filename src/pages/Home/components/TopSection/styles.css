@@ -3,7 +3,8 @@
     align-items: center;
     justify-content: center;
     gap: 5rem;
-    margin: 3rem;
+    margin: 1rem;
+    margin-top: 3rem;
 }
 
 .outline_services .box_outline {

@@ -1,7 +1,8 @@
 .container_introduction {
     display: flex;
     gap: 3rem;
-    margin-top: 3rem;
+    margin-top: 2rem;
+    justify-content: center;
     text-align: center;
     align-items: center;
 }
@@ -104,4 +105,18 @@
     transform: scale(1.5);
     transition: ease 300ms all;
     cursor: pointer;
+}
+
+@media(max-width: 425px){
+    .container_introduction {
+        flex-direction: column-reverse;
+    }
+    .container_introduction .info_introduction .description_introduction {
+        font-size: 1rem;
+        max-width: 80vw;
+    }
+    .container_introduction .info_introduction .box_introduction {
+        width: 50%;
+        height: 9vh;
+    }
 }

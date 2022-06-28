@@ -18,6 +18,9 @@
 }
 
 @media(max-width: 425px) {
+    .glitch_container {
+    margin-bottom: 2rem;
+    }
     .glitch_title {
         transform: scale(1.2);
     }
