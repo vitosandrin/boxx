@@ -42,7 +42,7 @@
     align-items: center;
     justify-content: center;
     gap: 2rem;
-    width: 60vw;
+    width: 60%;
 }
 
 .container_service .box_service .description_service {
@@ -57,4 +57,11 @@
 
 .container_service .box_service .description_service:hover {
     transform: scale(1.1);
+}
+
+@media(max-width: 768px){
+    .container_service .box_service {
+        width: 90%;
+        margin: 10px;
+    }
 }

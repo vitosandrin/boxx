@@ -3,6 +3,7 @@
     gap: 3rem;
     margin-top: 3rem;
     text-align: center;
+    align-items: center;
 }
 
 .container_introduction .img_introduction {
@@ -92,6 +93,10 @@
 
     .container_introduction .info_introduction .description_introduction {
         font-size: 1.3rem;
+    }
+
+    .container_introduction .info_introduction {
+        gap: 2rem
     }
 }
 
