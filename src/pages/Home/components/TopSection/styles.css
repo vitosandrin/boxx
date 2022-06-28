@@ -1,37 +1,33 @@
-.container {
-    display: flex;
-    margin-top: 1.5rem;
-    padding: 1.5rem;
-}
-
-.container-services {
+.outline_services {
     display: flex;
     align-items: center;
-    gap: 10rem
+    justify-content: center;
+    gap: 5rem;
+    margin: 3rem;
 }
 
-.box-services {
+.outline_services .box_outline {
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
     position: relative;
-    width: 50%;
-    padding: 1rem;
+    width: 60%;
+    padding: 2rem;
     cursor: default;
 }
 
-p {
+.outline_services .box_outline .description_outline {
     font-size: 1rem;
 }
 
-h6 {
+.outline_services .box_outline .title_outline {
     font-size: 1.5rem;
 }
 
 
 
-.box-services::before {
+.box_outline::before {
     content: '';
     position: absolute;
     left: 0;
@@ -45,7 +41,7 @@ h6 {
     transition: all .8s ease;
 }
 
-.box-services::after {
+.box_outline::after {
     content: '';
     position: absolute;
     right: 0;
@@ -59,8 +55,8 @@ h6 {
     transition: all .8s ease;
 }
 
-.box-services:hover::after,
-.box-services:hover::before {
+.box_outline:hover::after,
+.box_outline:hover::before {
     border-color: #6200ee;
     width: 100%;
     height: 100%;

@@ -17,7 +17,7 @@ const IntroductionSection = () => {
                     O que é .boxx?
                 </h2>
                 <p className="description_introduction">
-                    A .boxx é uma startup focada em excelência e resultados!
+                    A .boxx é uma software house focada em excelência e resultados!
                     Prezamos constantemente pela autenticidade e qualidade de
                     nossas soluções. .boxx é o pacote completo pra quem
                     deseja acelerar e profissionalizar ainda mais seu negócio

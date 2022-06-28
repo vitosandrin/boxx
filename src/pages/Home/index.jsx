@@ -1,9 +1,12 @@
 import './styles.css';
 import { useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
+import "aos/dist/aos.css";
 
 //Global Components
-import { ContactForm, Float, Footer } from "../../components";
+import {
+    Footer
+} from "../../components";
 
 // Local Components
 import TopSection from "./components/TopSection";
@@ -14,6 +17,7 @@ import ServiceSection from "./components/ServiceSection";
 
 const Home = () => {
     const routePath = useLocation();
+
     const onTop = () => {
         window.scrollTo(0, 0);
     }
@@ -30,9 +34,6 @@ const Home = () => {
             <div className="divider_home" />
             <ServiceSection />
             <div className="divider_home" />
-            <Float anime={"down"}>
-                <ContactForm />
-            </Float>
             <Footer />
         </div>
     )

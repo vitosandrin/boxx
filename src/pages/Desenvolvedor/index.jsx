@@ -9,7 +9,6 @@ import {
   CarouselComponent,
   CascatleTitle,
   ContactForm,
-  Float,
   Footer,
   HeroVideo
 } from '../../components';
@@ -21,14 +20,14 @@ import MainSection from './components/MainSection';
 import InfoSection from './components/InfoSection';
 
 const Desenvolvedor = () => {
-  
+
   const routePath = useLocation();
-    const onTop = () => {
-        window.scrollTo(0, 0);
-    }
-    useEffect(() => {
-        onTop()
-    }, [routePath]);
+  const onTop = () => {
+    window.scrollTo(0, 0);
+  }
+  useEffect(() => {
+    onTop()
+  }, [routePath]);
 
   const description = "Desenvolvemos aplicações modularizadas seguindo padrões de componentização e boas práticas de mercado visando sofisticar funcionalidades implementadas, buscando sempre acessibilidade e sucesso das requisições do usuário."
 
@@ -39,12 +38,8 @@ const Desenvolvedor = () => {
         <HeroVideo videoSrc={videodev} />
       </div>
       <div className="divider"></div>
-      <Float anime={"up"}>
-        <MainSection />
-      </Float>
-      <Float anime={"right"}>
-        <InfoSection />
-      </Float>
+      <MainSection />
+      <InfoSection />
       <div className="divider"></div>
       <Carousel
         enableAutoPlay={true}
