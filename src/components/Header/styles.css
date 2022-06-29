@@ -1,4 +1,4 @@
-.mainHeader {
+.header_container {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -17,28 +17,10 @@
 
 }
 
-.logo {
+.logo_header {
     box-shadow: #fff;
     transition: ease 1s all;
 }
-.logo:hover {
+.logo_header:hover {
     transform: scale(1.3);
-}
-
-
-.mainHeaderTitle {
-    color: #fff;
-    font-size: 1.3rem;
-
-    user-select: none;
-}
-
-.mainHeaderIcons {
-    display: flex;
-    gap: 1.75rem;
-    transition: ease 0.5s all;
-}
-
-.mainHeaderIcons:hover{
-    transform: scale(1.5);
 }

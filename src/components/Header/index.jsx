@@ -2,15 +2,12 @@ import './styles.css'
 
 import { Link } from "react-router-dom";
 
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faBoxOpen } from '@fortawesome/free-solid-svg-icons';
-
 const Header = (props) => {
     return (
-        <header className="mainHeader">
+        <header className="header_container">
 
             <Link to={"/"}>
-                <img src={props.logo} className="logo" alt={props.alt}/>
+                <img src={props.logo} className="logo_header" alt={props.alt}/>
             </Link>
 
             <Link to={"/dev"}>
@@ -24,13 +21,6 @@ const Header = (props) => {
             <Link to={"/trafego"}>
                 <p>Trafego</p>
             </Link>
-
-            <div className="mainHeaderIcons">
-                <Link to={'/'}>
-                    <FontAwesomeIcon icon={faBoxOpen} color="#fff" size="3x" />
-                </Link>
-            </div>
-            
         </header>
     )
 }

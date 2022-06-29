@@ -5,7 +5,7 @@
     justify-content: center;
 }
 
-.box_wrapper .box_container {
+.box_container {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
@@ -19,20 +19,20 @@
 
     border-radius: 2rem;
 
-    width: 40vw;
+    width: 520px;
     height: 10vh;
 }
 
-.box_wrapper .box_container .box_title {
+.box_title {
     font-size: 1.5rem;
     color: #e0eff2;
     text-shadow: -1px -1px 1px rgba(255, 255, 255, .1), 1px 1px 1px rgba(0, 0, 0, .5);
 }
-.box_wrapper .box_container .box_image {
+.box_image {
     transform: scale(0.6);
 }
 
-.box_wrapper .box_show {
+.box_show {
     background-color: #e0eff2;
     position: relative;
     text-align: center;
@@ -45,7 +45,7 @@
     padding: 2rem;
 }
 
-.box_wrapper .box_show .box_description{
+.box_description{
     font-size: 1.2rem;
     margin-top: 2rem;
     color: #111111;

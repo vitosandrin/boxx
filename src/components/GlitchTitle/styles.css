@@ -17,6 +17,35 @@
     padding-left: 1.5rem;
 }
 
+.glitch_title:before,
+.glitch_title:after {
+    padding-left: 1.5rem;
+
+    color: white;
+    content: attr(data-text);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #111111;
+    overflow: hidden;
+    top: 0;
+}
+
+
+
+.glitch_title:before {
+    left: 3px;
+    text-shadow: -2px 0 #002cee;
+    animation: glitch-1 2s linear infinite reverse;
+}
+
+.glitch_title:after {
+    left: -3px;
+    text-shadow: -2px 0 #6200ee;
+    animation: glitch-2 2s linear infinite reverse;
+}
+
+
 @media(max-width: 768px){
     .glitch_title{
         font-size: 6rem;
@@ -36,32 +65,6 @@
     .glitch_title {
         transform: scale(1);
     }
-}
-
-.glitch_title:before,
-.glitch_title:after {
-    padding-left: 1.5rem;
-
-    color: white;
-    content: attr(data-text);
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background: #111111;
-    overflow: hidden;
-    top: 0;
-}
-
-.glitch_title:before {
-    left: 3px;
-    text-shadow: -2px 0 #002cee;
-    animation: glitch-1 2s linear infinite reverse;
-}
-
-.glitch_title:after {
-    left: -3px;
-    text-shadow: -2px 0 #6200ee;
-    animation: glitch-2 2s linear infinite reverse;
 }
 
 @keyframes glitch-1 {

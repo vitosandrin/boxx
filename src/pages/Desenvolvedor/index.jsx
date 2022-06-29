@@ -33,14 +33,17 @@ const Desenvolvedor = () => {
 
   return (
     <div className="body_dev">
+      
       <CascatleTitle text={"Dev"} />
+      
       <div className="video_dev">
         <HeroVideo videoSrc={videodev} />
       </div>
+      
       <div className="divider"></div>
+      
       <MainSection />
-      <InfoSection />
-      <div className="divider"></div>
+
       <Carousel
         enableAutoPlay={true}
         autoPlaySpeed={2000}
@@ -53,10 +56,19 @@ const Desenvolvedor = () => {
           )
         })}
       </Carousel>
-      <Box title={"Saiba Mais"} description={description} />
+
+      <InfoSection />
+      
       <div className="divider"></div>
+
+      <Box title={"Saiba Mais"} description={description} />
+      
+      <div className="divider"></div>
+      
       <ContactForm />
+      
       <Footer />
+    
     </div>
   )
 }

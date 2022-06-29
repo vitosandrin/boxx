@@ -1,15 +1,14 @@
 import './styles.css';
-import icone from '../../../../assets/partilhar1.svg'
+import key from '../../assets/key.svg'
 
 
 const InfoSection = () => {
     return (
         <section className="container_devinfo">
             <h6 className="title_devinfo">Nossos Serviços</h6>
-            <div className="cards_devinfo">
                 <div className="card_devinfo">
                     <h4 className="title_devcard">Back-end</h4>
-                    <div className="description_devcard">
+                    <p className="description_devcard">
                         <p className="item_devcard">
                             🌎 API RESTful - API's produzidas em
                             conformidade com as restrições do estilo de arquitetura REST,
@@ -34,10 +33,10 @@ const InfoSection = () => {
                             de bons resultados com manipulação de métricas para implementações
                             de algoritmos inteligentes e funcionais na sua API.
                         </p>
-                    </div>
+                    </p>
                 </div>
 
-                <img className="img_devinfo" src={icone} alt="" />
+                <img className="img_dev_info" src={key} alt="" />
 
                 <div className="card_devinfoo">
                     <h4 className="title_devcard">Front-end</h4>
@@ -66,7 +65,6 @@ const InfoSection = () => {
                         </p>
                     </div>
                 </div>
-            </div>
         </section>
     )
 }

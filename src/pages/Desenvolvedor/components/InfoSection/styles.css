@@ -2,93 +2,79 @@
     display: flex;
     flex-direction: column;
     text-align: center;
+    
     gap: 5rem;
 }
 
-.container_devinfo .cards_devinfo .img_devinfo {}
-
-
-.container_devinfo .title_devinfo {
+.title_devinfo {
     font-weight: 700;
     font-size: 3rem;
+    
     color: #e0eff2;
     text-shadow: -4px 3px 0 #111111, -5px 5px 0 #6200ee;
 }
 
-.container_devinfo .cards_devinfo {
+.cards_devinfo {
     display: flex;
     flex-direction: column;
-    gap: 4rem;
     align-items: center;
     justify-content: center;
+    
+    gap: 4rem;
 }
 
-.container_devinfo .cards_devinfo .card_devinfo {
+.card_devinfo {
     display: flex;
-    gap: 1rem;
     flex-direction: column;
+
+    width: 70vw;
     padding: 2rem;
+    gap: 1rem;
     border-radius: 3rem;
+
     background-color: #111111;
     box-shadow: 30px -15px #6200ee;
-    width: 70vw;
 }
 
-.container_devinfo .cards_devinfo .card_devinfoo {
+.card_devinfoo {
     display: flex;
-    gap: 1rem;
     flex-direction: column;
+
+    width: 70vw;    
+    gap: 1rem;
     padding: 2rem;
     border-radius: 3rem;
+
     background-color: #111111;
     box-shadow: -15px 30px #6200ee;
-    width: 70vw;
 }
 
-.container_devinfo .cards_devinfo .card_devinfoo .title_devcard {
+.title_devcard {
     font-size: 1.8rem;
+    
     color: #e0eff2;
     text-shadow: -4px 3px 0 #111111, -5px 5px 0 #6200ee;
 }
 
-.container_devinfo .cards_devinfo .card_devinfoo .description_devcard {
+.description_devcard {
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
+    
     gap: 2rem;
 }
 
-.container_devinfo .cards_devinfo .card_devinfoo .description_devcard .item_devcard {
+.item_devcard {
     display: flex;
+
+    max-width: 60vw;
+
     font-size: 1rem;
     line-height: 1.425rem;
     letter-spacing: 1px;
-    max-width: 60vw;
+
     color: #e0eff2;
     text-shadow: -1px -1px 1px rgba(255, 255, 255, .1), 1px 1px 1px rgba(0, 0, 0, .5);
 }
 
-.container_devinfo .cards_devinfo .card_devinfo .title_devcard {
-    font-size: 1.8rem;
-    color: #e0eff2;
-    text-shadow: -4px 3px 0 #111111, -5px 5px 0 #6200ee;
-}
-
-.container_devinfo .cards_devinfo .card_devinfo .description_devcard {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    gap: 2rem;
-}
-
-.container_devinfo .cards_devinfo .card_devinfo .description_devcard .item_devcard {
-    display: flex;
-    font-size: 1rem;
-    line-height: 1.425rem;
-    letter-spacing: 1px;
-    max-width: 60vw;
-    color: #e0eff2;
-    text-shadow: -1px -1px 1px rgba(255, 255, 255, .1), 1px 1px 1px rgba(0, 0, 0, .5);
-}
