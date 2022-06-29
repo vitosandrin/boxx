@@ -17,12 +17,24 @@
     padding-left: 1.5rem;
 }
 
+@media(max-width: 768px){
+    .glitch_title{
+        font-size: 6rem;
+    }
+}
+
 @media(max-width: 425px) {
     .glitch_container {
     margin-bottom: 2rem;
     }
     .glitch_title {
         transform: scale(1.2);
+    }
+}
+
+@media(max-width: 375px){
+    .glitch_title {
+        transform: scale(1);
     }
 }
 

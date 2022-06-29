@@ -2,6 +2,7 @@
     display: flex;
     gap: 3rem;
     margin-top: 2rem;
+    margin: 2rem;
     justify-content: center;
     text-align: center;
     align-items: center;
@@ -13,13 +14,6 @@
     width: 500px;
     transition: 1s;
     animation: float 5s ease-in-out infinite;
-}
-
-@media(max-width: 768px) {
-    .container_introduction .img_introduction {
-        height: 325px;
-        width: 325px;
-    }
 }
 
 .container_introduction .img_introduction:hover {
@@ -87,13 +81,28 @@
     border-radius: 3rem;
 }
 
+.container_introduction .info_introduction .box_introduction .box_social {
+    transform: scale(1.5);
+    transition: ease 300ms all;
+    cursor: pointer;
+}
+
 @media(max-width: 768px) {
     .container_introduction .info_introduction .box_introduction {
-        height: 6vh;
+        height: 9vh;
+    }
+
+    .container_introduction .info_introduction .title_introduction {
+        font-size: 2rem;
     }
 
     .container_introduction .info_introduction .description_introduction {
-        font-size: 1.3rem;
+        font-size: 0.8rem;
+    }
+
+    .container_introduction .img_introduction {
+        height: 325px;
+        width: 325px;
     }
 
     .container_introduction .info_introduction {
@@ -101,22 +110,26 @@
     }
 }
 
-.container_introduction .info_introduction .box_introduction .box_social {
-    transform: scale(1.5);
-    transition: ease 300ms all;
-    cursor: pointer;
-}
-
-@media(max-width: 425px){
+@media(max-width: 425px) {
     .container_introduction {
         flex-direction: column-reverse;
     }
+
+    .container_introduction .img_introduction{
+        margin-top: 1.5rem;
+    }
+
     .container_introduction .info_introduction .description_introduction {
-        font-size: 1rem;
+        font-size: 0.8rem;
         max-width: 80vw;
     }
+
     .container_introduction .info_introduction .box_introduction {
         width: 50%;
         height: 9vh;
     }
+}
+
+@media(max-width: 320px){
+
 }

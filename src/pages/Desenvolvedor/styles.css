@@ -27,9 +27,15 @@
     visibility: hidden;
 }
 
-.body_dev .video_dev{
+.body_dev .video_dev {
     position: relative;
     bottom: 150px;
     z-index: 0;
     max-width: 70vw;
+}
+
+@media(max-width: 769px) {
+    .body_dev {
+        gap: 2rem;
+    }
 }

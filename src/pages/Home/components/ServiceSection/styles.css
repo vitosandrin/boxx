@@ -53,15 +53,54 @@
     padding: 2rem;
     border-radius: 1rem;
     transition: ease 1s all;
+    user-select: none;
 }
 
 .container_service .box_service .description_service:hover {
     transform: scale(1.1);
 }
 
-@media(max-width: 768px){
+@media(max-width: 768px) {
     .container_service .box_service {
         width: 90%;
         margin: 10px;
     }
+
+    .container_service .title_service {
+        font-size: 2rem;
+    }
+
+    .container_service .box_service .description_service {
+        font-size: 0.89rem;
+        padding: 2rem;
+    }
+
+    .container_service .box_service .img_boxservice {
+        width: 200px;
+        height: 200px;
+    }
+}
+
+@media(max-width: 425px) {
+    .container_service .box_service {
+        width: 90%;
+        margin: 1rem;
+        gap: 1rem;
+    }
+
+    .container_service .img_service {
+        width: 175px;
+        height: 175px;
+    }
+
+    .container_service .box_service .img_boxservice {
+        height: 100px;
+        width: 100px;
+    }
+
+    .container_service .box_service .description_service {
+        padding: 1.3rem;
+        font-size: 0.8rem;
+    }
+
 }

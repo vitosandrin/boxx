@@ -14,12 +14,14 @@
     text-align: center;
     position: relative;
     width: 60%;
+    gap: 0.1rem;
     padding: 2rem;
     cursor: default;
 }
 
 .outline_services .box_outline .description_outline {
     font-size: 1rem;
+    line-height: 1.125rem;
 }
 
 .outline_services .box_outline .title_outline {
@@ -62,7 +64,11 @@
     width: 100%;
     height: 100%;
 }
-
+@media(max-width: 768px){
+    .outline_services .box_outline .description_outline {
+        font-size: 0.8rem;
+    }
+}
 @media(max-width: 425px) {
     .outline_services {
         flex-direction: column;
@@ -71,4 +77,5 @@
     .outline_services .box_outline {
         width: 80%;
     }
+
 }
