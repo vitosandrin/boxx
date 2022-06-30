@@ -28,3 +28,9 @@
     }
 
 }
+
+@media(max-width: 426px) {
+    .cascate_title {
+        font-size: 7.5rem;
+    }
+}

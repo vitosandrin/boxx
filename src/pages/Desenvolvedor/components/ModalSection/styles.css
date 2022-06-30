@@ -1,5 +1,4 @@
-
-.modal_devcontent{
+.modal_devcontent {
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -7,11 +6,22 @@
     user-select: none;
 }
 
-.modal_devdescription{
+.modal_devdescription {
     font-size: 1rem;
 }
 
-.modal_devsubtitle{
+.modal_devsubtitle {
     font-size: 1.3rem;
-    text-shadow: -1px -1px 1px rgba(255,255,255,.1), 1px 1px 1px rgba(0,0,0,.5);
+    text-shadow: -1px -1px 1px rgba(255, 255, 255, .1), 1px 1px 1px rgba(0, 0, 0, .5);
+}
+
+@media(max-width: 769px) {
+    .modal_devsubtitle {
+        font-size: 1.1rem;
+    }
+
+    .modal_devdescription {
+        font-size: 0.8rem;
+    }
+
 }

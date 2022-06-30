@@ -10,7 +10,6 @@
     color: #fff;
     font-weight: 800;
     font-size: 7rem;
-    transform: scale(2);
     letter-spacing: 2px;
     user-select: none;
 
@@ -46,25 +45,23 @@
 }
 
 
-@media(max-width: 768px){
-    .glitch_title{
+@media(max-width: 769px) {
+    .glitch_title {
         font-size: 6rem;
     }
 }
 
-@media(max-width: 425px) {
+@media(max-width: 426px) {
     .glitch_container {
-    margin-bottom: 2rem;
-    }
-    .glitch_title {
-        transform: scale(1.2);
+        margin-bottom: 1rem;
     }
 }
 
-@media(max-width: 375px){
+@media(max-width: 321px) {
     .glitch_title {
-        transform: scale(1);
+        font-size: 5rem;
     }
+
 }
 
 @keyframes glitch-1 {

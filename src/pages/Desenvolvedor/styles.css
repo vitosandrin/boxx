@@ -14,7 +14,7 @@
     background-size: cover;
 }
 
-.button_modal {
+.button_modaldev {
     padding: 2rem;
     font-size: 2rem;
     border-radius: 2rem;
@@ -48,7 +48,7 @@
     visibility: hidden;
 }
 
-.body_dev .video_dev {
+.video_dev {
     position: relative;
     bottom: 150px;
     z-index: 0;
@@ -56,7 +56,12 @@
 }
 
 @media(max-width: 769px) {
-    .body_dev {
-        gap: 2rem;
+    .video_dev {
+        bottom: 130px;
+        margin-bottom: -150px;
+    }
+
+    .button_modaldev {
+        font-size: 1.4rem;
     }
 }

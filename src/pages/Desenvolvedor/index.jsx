@@ -75,9 +75,7 @@ const Desenvolvedor = () => {
 
       <InfoSection />
 
-      <div className="divider"></div>
-
-      <div onClick={() => setIsOpen(true)} className="button_modal">
+      <div onClick={() => setIsOpen(true)} className="button_modaldev">
         Como trabalhamos?
       </div>
 

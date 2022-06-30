@@ -7,7 +7,7 @@
     margin-top: 3rem;
 }
 
-.outline_services .box_outline {
+.box_outline {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -19,12 +19,12 @@
     cursor: default;
 }
 
-.outline_services .box_outline .description_outline {
+.description_outline {
     font-size: 1rem;
     line-height: 1.125rem;
 }
 
-.outline_services .box_outline .title_outline {
+.title_outline {
     font-size: 1.5rem;
 }
 
@@ -64,18 +64,18 @@
     width: 100%;
     height: 100%;
 }
-@media(max-width: 768px){
-    .outline_services .box_outline .description_outline {
+@media(max-width: 769px){
+    .description_outline {
         font-size: 0.8rem;
     }
 }
-@media(max-width: 425px) {
+@media(max-width: 426px) {
     .outline_services {
         flex-direction: column;
     }
 
-    .outline_services .box_outline {
-        width: 80%;
+    .box_outline {
+        width: 80vw;
     }
 
 }

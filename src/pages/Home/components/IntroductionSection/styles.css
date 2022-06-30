@@ -8,7 +8,7 @@
     align-items: center;
 }
 
-.container_introduction .img_introduction {
+.img_introduction {
     border-radius: 100%;
     height: 500px;
     width: 500px;
@@ -16,7 +16,7 @@
     animation: float 5s ease-in-out infinite;
 }
 
-.container_introduction .img_introduction:hover {
+.img_introduction:hover {
     box-shadow: 0 0 1.2em #6200ee;
 }
 
@@ -34,7 +34,7 @@
     }
 }
 
-.container_introduction .info_introduction {
+.info_introduction {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -44,14 +44,14 @@
     text-align: center;
 }
 
-.container_introduction .info_introduction .title_introduction {
+.title_introduction {
     font-weight: 700;
     font-size: 3rem;
     color: #e0eff2;
     text-shadow: -4px 3px 0 #111111, -5px 5px 0 #6200ee;
 }
 
-.container_introduction .info_introduction .description_introduction {
+.description_introduction {
     font-size: 1.125rem;
     line-height: 1.425rem;
     letter-spacing: 1px;
@@ -59,13 +59,13 @@
     color: #e0eff2;
 }
 
-.container_introduction .info_introduction .image_description {
+.image_description {
     border-radius: 100%;
     height: 500px;
     width: 500px;
 }
 
-.container_introduction .info_introduction .box_introduction {
+.box_introduction {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
@@ -81,55 +81,58 @@
     border-radius: 3rem;
 }
 
-.container_introduction .info_introduction .box_introduction .box_social {
+.box_social {
     transform: scale(1.5);
     transition: ease 300ms all;
     cursor: pointer;
 }
 
-@media(max-width: 768px) {
-    .container_introduction .info_introduction .box_introduction {
+@media(max-width: 769px) {
+    .box_introduction {
         height: 9vh;
     }
 
-    .container_introduction .info_introduction .title_introduction {
+    .title_introduction {
         font-size: 2rem;
     }
 
-    .container_introduction .info_introduction .description_introduction {
+    .description_introduction {
         font-size: 0.8rem;
     }
 
-    .container_introduction .img_introduction {
+    .img_introduction {
         height: 325px;
         width: 325px;
     }
 
-    .container_introduction .info_introduction {
+    .info_introduction {
         gap: 2rem
     }
 }
 
-@media(max-width: 425px) {
+@media(max-width: 426px) {
     .container_introduction {
         flex-direction: column-reverse;
     }
 
-    .container_introduction .img_introduction{
+    .img_introduction{
         margin-top: 1.5rem;
     }
 
-    .container_introduction .info_introduction .description_introduction {
+    .description_introduction {
         font-size: 0.8rem;
         max-width: 80vw;
     }
 
-    .container_introduction .info_introduction .box_introduction {
+    .box_introduction {
         width: 50%;
         height: 9vh;
     }
 }
 
-@media(max-width: 320px){
-
+@media(max-width: 321px){
+    .img_introduction{
+        height: 225px;
+        width: 225px;
+    }
 }
