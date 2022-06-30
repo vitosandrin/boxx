@@ -4,6 +4,9 @@
     text-align: center;
     gap: 1rem;
     user-select: none;
+    margin-top: 1rem;
+
+    width: 100%;
 }
 
 .modal_devdescription {

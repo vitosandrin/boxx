@@ -64,3 +64,9 @@
         width: 80%;
     }
 }
+
+@media(max-width: 376px) {
+    .img_devmain {
+        transform: scale(1);
+    }
+}

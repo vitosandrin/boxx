@@ -7,6 +7,7 @@
 
     padding: 2rem;
     gap: 1rem;
+    margin: 2rem;
     border-radius: 3rem;
 
     background-color: #6200ee;
@@ -36,4 +37,14 @@
 
 .link_contact:hover {
     transform: scale(1.1);
+}
+
+@media(max-width: 321px){
+    .container_contact{
+        gap: 1.5rem;
+    }
+    .title_contact{
+        font-size: 1rem;
+        width: 120%;
+    }
 }

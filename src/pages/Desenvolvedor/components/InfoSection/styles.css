@@ -68,8 +68,6 @@
 .item_devcard {
     display: flex;
 
-    max-width: 60vw;
-
     font-size: 1rem;
     line-height: 1.425rem;
     letter-spacing: 1px;
@@ -85,7 +83,6 @@
 
     .item_devcard{
         font-size: 0.8rem;
-        width: 400px;
     }
 
     .title_devcard{
@@ -95,7 +92,7 @@
 
 @media(max-width: 426px){
     .card_devinfo{
-        width: 80vw;
+        width: 93vw;
         box-shadow: 7px -5px #6200ee;
     }   
     .card_devinfoo{

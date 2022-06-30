@@ -5,4 +5,25 @@
     padding: 1rem;
 }
 
+@media(max-width: 769px){
+    .card_carousel{
+        padding: 0;
+    }
+    .img_carousel{
+        transform: scale(0.8);
+    }
+}
+
+@media(max-width: 376px){
+    .img_carousel{
+        transform: scale(0.6);
+    }
+}
+
+@media(max-width: 321px){
+    .img_carousel{
+        transform: scale(0.4);
+    }
+}
+
 
