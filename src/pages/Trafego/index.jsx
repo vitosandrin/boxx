@@ -35,6 +35,7 @@ const Trafego = () => {
     return (
         <div className="body_mkt">
             <CascatleTitle text={"Tráfego"} />
+            
             <div className="video_mkt">
                 <HeroVideo videoSrc={videomkt} />
             </div>

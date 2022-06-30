@@ -1,5 +1,5 @@
 import './styles.css'
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import { useLocation } from 'react-router-dom';
 import videodev from '../../assets/video/dev.webm'
 
@@ -10,7 +10,8 @@ import {
   CascatleTitle,
   ContactForm,
   Footer,
-  HeroVideo
+  HeroVideo,
+  Modal
 } from '../../components';
 import { ToolsDev } from '../../assets/data/dev';
 import Carousel from 'react-elastic-carousel'
@@ -20,6 +21,8 @@ import MainSection from './components/MainSection';
 import InfoSection from './components/InfoSection';
 
 const Desenvolvedor = () => {
+
+  const [isOpen, setIsOpen] = useState(false);
 
   const routePath = useLocation();
   const onTop = () => {
@@ -33,15 +36,19 @@ const Desenvolvedor = () => {
 
   return (
     <div className="body_dev">
-      
+      <button onClick={() => setIsOpen(true)}>open modal</button>
+      <Modal open={isOpen} onClose={() => setIsOpen(false)}>
+        Modal esta funcionando
+      </Modal>
+
       <CascatleTitle text={"Dev"} />
-      
+
       <div className="video_dev">
         <HeroVideo videoSrc={videodev} />
       </div>
-      
+
       <div className="divider"></div>
-      
+
       <MainSection />
 
       <Carousel
@@ -58,17 +65,17 @@ const Desenvolvedor = () => {
       </Carousel>
 
       <InfoSection />
-      
+
       <div className="divider"></div>
 
       <Box title={"Saiba Mais"} description={description} />
-      
+
       <div className="divider"></div>
-      
+
       <ContactForm />
-      
+
       <Footer />
-    
+
     </div>
   )
 }

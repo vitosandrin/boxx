@@ -5,20 +5,20 @@
     gap: 3rem;
 }
 
-.container_devmain .title_devmain{
+.title_devmain{
     font-weight: 700;
     font-size: 3rem;
     color: #e0eff2;
     text-shadow: -4px 3px 0 #111111, -5px 5px 0 #6200ee;
 }
-.container_devmain .box_devmain{
+.box_devmain{
     display: flex;
     text-align: center;
     justify-content: center;
     align-items: center;
     gap: 2rem;
 }
-.container_devmain .box_devmain .description_devmain{
+.description_devmain{
     font-size: 1.125rem;
     line-height: 1.425rem;
     letter-spacing: 1px;
@@ -33,13 +33,10 @@
     transition: ease 1s all;
     user-select: none;
 }
-.container_devmain .box_devmain .description_devmain:hover{
+.description_devmain:hover{
     transform: scale(1.1);
 }
 
-.container_devmain .box_devmain .img_devmain{
+.img_devmain{
     transform: scale(1.1);
 }
-
-
-

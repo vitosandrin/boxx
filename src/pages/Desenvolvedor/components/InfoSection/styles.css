@@ -6,6 +6,10 @@
     gap: 5rem;
 }
 
+.img_devinfo{
+    transform: scale(0.4);
+}
+
 .title_devinfo {
     font-weight: 700;
     font-size: 3rem;
