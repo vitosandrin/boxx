@@ -19,16 +19,28 @@
     font-size: 2rem;
     border-radius: 2rem;
     color: #fff;
-    text-shadow: 0 0 10px #FFFFFF;
     cursor: pointer;
-    background-image: url('../../assets/nebula.webp');
+    text-shadow: -4px 3px 0 #111111, -5px 5px 0 #6200ee;
+
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 
     -webkit-box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
     box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+    transition: ease 1s all;
 }
+
+.button_modal:hover {
+    transform: scale(0.9);
+}
+
+.modal_devcontent{
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
 
 .divider {
     width: 10rem;

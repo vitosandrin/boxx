@@ -37,10 +37,12 @@ const Desenvolvedor = () => {
   return (
     <div className="body_dev">
       <Modal open={isOpen} onClose={() => setIsOpen(false)}>
-        Desenvolvemos aplicações modularizadas seguindo padrões
-        de componentização e boas práticas de mercado visando
-        sofisticar funcionalidades implementadas, buscando
-        sempre acessibilidade e sucesso das requisições do usuário.
+        <div className="modal_devcontent">
+          Desenvolvemos aplicações modularizadas seguindo padrões
+          de componentização e boas práticas de mercado visando
+          sofisticar funcionalidades implementadas, buscando
+          sempre acessibilidade e sucesso das requisições do usuário.
+        </div>
       </Modal>
 
       <CascatleTitle text={"Dev"} />
@@ -70,7 +72,7 @@ const Desenvolvedor = () => {
 
       <div className="divider"></div>
       <div onClick={() => setIsOpen(true)} className="button_modal">
-        Saiba Mais
+        Como trabalhamos?
       </div>
       <Box title={"Saiba Mais"} description={description} />
 
