@@ -55,3 +55,24 @@
     color: #e0eff2;
     text-shadow: -1px -1px 1px rgba(255, 255, 255, .1), 1px 1px 1px rgba(0, 0, 0, .5);
 }
+
+@media(max-width: 769px) {
+    .title_designinfo {
+        font-size: 2rem;
+    }
+
+    .item_designcard{
+        font-size: 0.8rem;
+    }
+
+    .title_designcard{
+        font-size: 1.4rem;
+    }
+}
+
+@media(max-width: 426px){
+    .card_designinfo{
+        width: 93vw;
+        box-shadow: 7px -5px #6200ee;
+    }   
+}

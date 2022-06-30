@@ -46,7 +46,8 @@
 
 @media(max-width: 769px) {
     .title_devmain {
-        font-size: 2rem;
+        font-size: 1.6rem;
+        margin: 1rem;
     }
 
     .description_devmain {

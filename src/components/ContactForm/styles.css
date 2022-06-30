@@ -42,6 +42,7 @@
 @media(max-width: 321px){
     .container_contact{
         gap: 1.5rem;
+        padding: 1.2rem;
     }
     .title_contact{
         font-size: 1rem;

@@ -41,6 +41,36 @@
     transform: scale(1.1);
 }
 
-.img_designmain{
+.img_designmain {
     transform: scale(1.1);
+}
+
+@media(max-width: 769px) {
+    .title_designmain {
+        font-size: 2rem;
+    }
+
+    .description_designmain {
+        font-size: 0.8rem;
+        width: 400px;
+    }
+}
+
+@media(max-width: 426px) {
+    .title_designmain {
+        font-size: 1.5rem;
+    }
+    .box_designmain {
+        flex-direction: column-reverse;
+    }
+
+    .description_designmain {
+        width: 80%;
+    }
+}
+
+@media(max-width: 376px) {
+    .img_designmain {
+        transform: scale(1);
+    }
 }

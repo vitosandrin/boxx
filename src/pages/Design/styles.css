@@ -15,7 +15,7 @@
 }
 
 
-.button_modal {
+.button_modaldesign {
     padding: 2rem;
     font-size: 2rem;
     border-radius: 2rem;
@@ -32,11 +32,11 @@
     transition: ease 1s all;
 }
 
-.button_modal:hover {
+.button_modaldesign:hover {
     transform: scale(0.9);
 }
 
-.body_design .video_design {
+.video_design {
     position: relative;
     bottom: 150px;
     z-index: 0;
@@ -50,4 +50,22 @@
     background: #6200ee;
 
     border-radius: 5rem;
+}
+
+
+@media(max-width: 769px) {
+    .video_design {
+        bottom: 130px;
+        margin-bottom: -150px;
+    }
+
+    .button_modaldesign {
+        font-size: 1.4rem;
+    }
+}
+
+@media(max-width: 426px){
+    .video_design{
+        bottom: 120px;
+    }
 }

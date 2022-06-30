@@ -4,6 +4,8 @@
     text-align: center;
     gap: 1rem;
     user-select: none;
+    margin-top: 1rem;
+
 }
 
 .modal_designdescription {
@@ -13,4 +15,16 @@
 .modal_designsubtitle {
     font-size: 1.3rem;
     text-shadow: -1px -1px 1px rgba(255, 255, 255, .1), 1px 1px 1px rgba(0, 0, 0, .5);
+}
+
+
+@media(max-width: 769px) {
+    .modal_designsubtitle {
+        font-size: 1.1rem;
+    }
+
+    .modal_designdescription {
+        font-size: 0.8rem;
+    }
+
 }
