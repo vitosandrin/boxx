@@ -3,11 +3,20 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    padding: 3rem;
+    padding: 2rem;
     z-index: 1000;
     background-color: #fff;
 
+    font-size: 1rem;
+
     border-radius: 2rem;
+}
+
+.close_modal{
+    position: relative;
+    bottom: 1em;
+    right: 0.5em;
+    cursor: pointer;
 }
 
 .overlay_modal{
