@@ -1,0 +1,16 @@
+
+.modal_devcontent{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 0.3rem;
+}
+
+.modal_devdescription{
+    font-size: 1rem;
+}
+
+.modal_devsubtitle{
+    font-size: 1.3rem;
+    text-shadow: -1px -1px 1px rgba(255,255,255,.1), 1px 1px 1px rgba(0,0,0,.5);
+}

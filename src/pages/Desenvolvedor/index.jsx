@@ -19,6 +19,7 @@ import Carousel from 'react-elastic-carousel'
 //Local Components
 import MainSection from './components/MainSection';
 import InfoSection from './components/InfoSection';
+import ModalSection from './components/ModalSection';
 
 const Desenvolvedor = () => {
 
@@ -37,12 +38,20 @@ const Desenvolvedor = () => {
   return (
     <div className="body_dev">
       <Modal open={isOpen} onClose={() => setIsOpen(false)}>
-        <div className="modal_devcontent">
-          Desenvolvemos aplicações modularizadas seguindo padrões
-          de componentização e boas práticas de mercado visando
-          sofisticar funcionalidades implementadas, buscando
-          sempre acessibilidade e sucesso das requisições do usuário.
-        </div>
+        <ModalSection />
+        <Carousel
+          enableAutoPlay={true}
+          autoPlaySpeed={2000}
+          focusOnSelect={true}
+          transitionMs={2000}
+        >
+          {ToolsDev.map(item => {
+            return (
+              <CarouselComponent key={item.id} src={item.image} alt={item.title} />
+            )
+          })}
+        </Carousel>
+
       </Modal>
 
       <CascatleTitle text={"Dev"} />

@@ -35,13 +35,6 @@
     transform: scale(0.9);
 }
 
-.modal_devcontent{
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-}
-
-
 .divider {
     width: 10rem;
     height: 0.3rem;
