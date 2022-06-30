@@ -14,11 +14,9 @@ const SolutionSection = () => {
                 </div>
                 <div className="box_solution">
                     <h6 className="text_solution">Design</h6>
-                    <p className="description_solution">Quero saber mais!</p>
-                </div>
-                <div className="box_solution">
-                    <h6 className="text_solution">Tráfego</h6>
-                    <p className="description_solution">Quero saber mais!</p>
+                    <Link to={'/design'}>
+                        <p className="description_solution">Quero saber mais!</p>
+                    </Link>
                 </div>
             </div>
         </section>

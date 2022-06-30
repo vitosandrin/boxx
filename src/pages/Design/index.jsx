@@ -49,16 +49,17 @@ const Design = () => {
                         )
                     })}
                 </Carousel>
-
             </Modal>
+
             <CascatleTitle text={"Design"} />
+            
             <div className="video_design">
                 <HeroVideo videoSrc={video} />
             </div>
             <div className="divider_design"></div>
+
             <MainSection />
-            <InfoSection />
-            <div className="divider_design"></div>
+
             <Carousel
                 enableAutoPlay={true}
                 autoPlaySpeed={2000}
@@ -72,12 +73,18 @@ const Design = () => {
                 })}
             </Carousel>
 
+            <InfoSection />
+
+            <div className="divider_design"></div>
+
             <div onClick={() => setIsOpen(true)} className="button_modal">
                 Como trabalhamos?
             </div>
 
             <div className="divider_design"></div>
+
             <ContactForm />
+
             <Footer />
         </div>
     )

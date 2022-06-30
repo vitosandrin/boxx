@@ -1,7 +1,6 @@
 import './styles.css';
 import { useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
-import "aos/dist/aos.css";
 
 //Global Components
 import {
@@ -13,7 +12,7 @@ import TopSection from "./components/TopSection";
 import MainSection from "./components/MainSection";
 import IntroductionSection from "./components/IntroductionSection";
 import ServiceSection from "./components/ServiceSection";
-
+import SolutionSection from './components/SolutionSection';
 
 const Home = () => {
     const routePath = useLocation();
@@ -34,6 +33,7 @@ const Home = () => {
             <div className="divider_home" />
             <ServiceSection />
             <div className="divider_home" />
+            <SolutionSection />
             <Footer />
         </div>
     )

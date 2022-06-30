@@ -9,7 +9,7 @@ const ModalSection = () => {
                 especialmente planejados para suprir necessidades
                 básicas do visual da sua empresa.
             </p>
-            <h6 className="modal_designsubtitle" >Ferramentas utlizadas:</h6>
+            <h6 className="modal_designsubtitle" >Ferramentas utilizadas:</h6>
         </div>
     )
 }
