@@ -1,5 +1,5 @@
 import './styles.css'
-import icone from '../../../../assets/services.svg';
+import icone from '../../assets/services.svg';
 
 const MainSection = () => {
     return (

@@ -1,4 +1,4 @@
-.body_design{
+.body_design {
     background-color: #111111;
 
     height: clamp(100vh, 100%, 100%);
@@ -14,12 +14,35 @@
     background-size: cover;
 }
 
-.body_design .video_design{
+
+.button_modal {
+    padding: 2rem;
+    font-size: 2rem;
+    border-radius: 2rem;
+    color: #fff;
+    cursor: pointer;
+    text-shadow: -4px 3px 0 #111111, -5px 5px 0 #6200ee;
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    -webkit-box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+    box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+    transition: ease 1s all;
+}
+
+.button_modal:hover {
+    transform: scale(0.9);
+}
+
+.body_design .video_design {
     position: relative;
     bottom: 150px;
     z-index: 0;
     max-width: 70vw;
 }
+
 .divider_design {
     width: 10rem;
     height: 0.3rem;

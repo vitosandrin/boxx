@@ -5,7 +5,6 @@ import videodev from '../../assets/video/dev.webm'
 
 //Global Components
 import {
-  Box,
   CarouselComponent,
   CascatleTitle,
   ContactForm,
@@ -32,9 +31,7 @@ const Desenvolvedor = () => {
   useEffect(() => {
     onTop()
   }, [routePath]);
-
-  const description = "Desenvolvemos aplicações modularizadas seguindo padrões de componentização e boas práticas de mercado visando sofisticar funcionalidades implementadas, buscando sempre acessibilidade e sucesso das requisições do usuário."
-
+  
   return (
     <div className="body_dev">
       <Modal open={isOpen} onClose={() => setIsOpen(false)}>
@@ -51,7 +48,6 @@ const Desenvolvedor = () => {
             )
           })}
         </Carousel>
-
       </Modal>
 
       <CascatleTitle text={"Dev"} />
@@ -80,10 +76,10 @@ const Desenvolvedor = () => {
       <InfoSection />
 
       <div className="divider"></div>
+
       <div onClick={() => setIsOpen(true)} className="button_modal">
         Como trabalhamos?
       </div>
-      <Box title={"Saiba Mais"} description={description} />
 
       <div className="divider"></div>
 

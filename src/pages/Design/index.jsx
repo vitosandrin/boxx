@@ -1,5 +1,5 @@
 import './styles.css'
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import { useLocation } from 'react-router-dom';
 import video from '../../assets/video/design1.webm'
 
@@ -8,9 +8,9 @@ import {
     CascatleTitle,
     HeroVideo,
     CarouselComponent,
-    Box,
     ContactForm,
-    Footer
+    Footer,
+    Modal
 } from '../../components';
 import Carousel from 'react-elastic-carousel'
 import { ToolsDesign } from '../../assets/data/design'
@@ -18,8 +18,12 @@ import { ToolsDesign } from '../../assets/data/design'
 //Local Components
 import MainSection from './components/MainSection';
 import InfoSection from './components/InfoSection';
+import ModalSection from './components/ModalSection';
 
 const Design = () => {
+
+    const [isOpen, setIsOpen] = useState(false);
+
     const routePath = useLocation();
     const onTop = () => {
         window.scrollTo(0, 0);
@@ -28,10 +32,25 @@ const Design = () => {
         onTop()
     }, [routePath]);
 
-    const description = "Prezamos pela autenticidade e originalidade de sua marca, prototipamos projetos únicos e especialmente planejados para suprir necessidades básicas do visual da sua empresa."
 
     return (
         <div className="body_design">
+            <Modal open={isOpen} onClose={() => setIsOpen(false)}>
+                <ModalSection />
+                <Carousel
+                    enableAutoPlay={true}
+                    autoPlaySpeed={2000}
+                    focusOnSelect={true}
+                    transitionMs={2000}
+                >
+                    {ToolsDesign.map(item => {
+                        return (
+                            <CarouselComponent key={item.id} src={item.image} alt={item.title} />
+                        )
+                    })}
+                </Carousel>
+
+            </Modal>
             <CascatleTitle text={"Design"} />
             <div className="video_design">
                 <HeroVideo videoSrc={video} />
@@ -52,7 +71,11 @@ const Design = () => {
                     )
                 })}
             </Carousel>
-            <Box title={"Saiba Mais"} description={description} />
+
+            <div onClick={() => setIsOpen(true)} className="button_modal">
+                Como trabalhamos?
+            </div>
+
             <div className="divider_design"></div>
             <ContactForm />
             <Footer />
