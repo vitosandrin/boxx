@@ -31,7 +31,7 @@
     transition: ease 1s all;
 }
 
-.button_modal:hover {
+.button_modaldev:hover {
     transform: scale(0.9);
 }
 

@@ -7,19 +7,15 @@ const Header = (props) => {
         <header className="header_container">
 
             <Link to={"/"}>
-                <img src={props.logo} className="logo_header" alt={props.alt}/>
+                <img src={props.logo} className="logo_header" alt={props.alt} />
             </Link>
 
-            <Link to={"/dev"}>
-                <p>Dev</p>
+            <Link className="link_header" to={"/dev"}>
+                <p >Dev</p>
             </Link>
 
-            <Link to={"/design"}>
+            <Link className="link_header" to={"/design"}>
                 <p>Design</p>
-            </Link>
-            
-            <Link to={"/trafego"}>
-                <p>Trafego</p>
             </Link>
         </header>
     )
