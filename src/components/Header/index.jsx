@@ -11,7 +11,7 @@ const Header = (props) => {
             </Link>
 
             <Link className="link_header" to={"/dev"}>
-                <p >Dev</p>
+                <p>Dev</p>
             </Link>
 
             <Link className="link_header" to={"/design"}>
