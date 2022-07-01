@@ -82,10 +82,14 @@
 }
 
 .box_social {
-    transform: scale(1.5);
+    transform: scale(1.3);
     transition: ease 300ms all;
     cursor: pointer;
 }
+.box_social:hover{
+    transform: scale(1.6);
+}
+
 
 @media(max-width: 769px) {
     .box_introduction {

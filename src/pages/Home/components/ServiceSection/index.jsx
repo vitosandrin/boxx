@@ -7,8 +7,6 @@ import icone5 from '../../assets/icone5.svg'
 import icone6 from '../../assets/icone6.svg'
 import icone8 from '../../assets/icone8.svg'
 
-//Global Components
-
 const ServiceSection = () => {
     return (
         <section className="container_service">
