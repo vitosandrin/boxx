@@ -4,7 +4,7 @@ const InfoSection = () => {
     return (
         <section className="container_devinfo">
             <h6 className="title_devinfo">Nossos Serviços</h6>
-            <div className="card_devinfoo">
+            <div className="card_devinfo">
                 <h4 className="title_devcard">Back-end</h4>
                 <div className="description_devcard">
                     <p className="item_devcard">
@@ -33,7 +33,8 @@ const InfoSection = () => {
                     </p>
                 </div>
             </div>
-            <div className="card_devinfo">
+            <div className="divider"/>
+            <div className="card_devinfoo">
                 <h4 className="title_devcard">Front-end</h4>
                 <div className="description_devcard">
                     <p className="item_devcard">
