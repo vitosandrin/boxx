@@ -1,5 +1,5 @@
 import './styles.css'
-import whatsapp from '../../assets/whatsapp.svg'
+import whatsapp from './assets/whatsapp.svg'
 
 const ContactForm = () => {
     return (

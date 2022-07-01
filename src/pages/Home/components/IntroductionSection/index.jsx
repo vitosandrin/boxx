@@ -2,9 +2,9 @@ import './styles.css'
 import { Link } from "react-router-dom";
 
 //Assets
-import astronaut from '../../../../assets/astronaut.webp'
-import facebook from '../../../../assets/facebook.svg'
-import instagram from '../../../../assets/instagram.svg'
+import astronaut from '../../assets/astronaut.webp'
+import facebook from '../../../../assets/icons/facebook.svg'
+import instagram from '../../../../assets/icons/instagram.svg'
 
 
 const IntroductionSection = () => {

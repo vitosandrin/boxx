@@ -1,11 +1,11 @@
 import './styles.css'
 
-import icone1 from '../../../../assets/icone1.svg'
-import icone7 from '../../../../assets/icone7.svg'
-import icone4 from '../../../../assets/icone4.svg'
-import icone5 from '../../../../assets/icone5.svg'
-import icone6 from '../../../../assets/icone6.svg'
-import icone8 from '../../../../assets/icone8.svg'
+import icone1 from '../../assets/icone1.svg'
+import icone7 from '../../assets/icone7.svg'
+import icone4 from '../../assets/icone4.svg'
+import icone5 from '../../assets/icone5.svg'
+import icone6 from '../../assets/icone6.svg'
+import icone8 from '../../assets/icone8.svg'
 
 //Global Components
 

@@ -1,5 +1,6 @@
 import './styles.css'
-import logo from '../../assets/logo.svg'
+import logo from './assets/logo.svg'
+
 const Footer = () => {
     return (
         <footer className="container_footer">
