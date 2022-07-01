@@ -54,6 +54,9 @@
 
 
 @media(max-width: 769px) {
+    .body_design{
+        gap: 4rem;
+    }
     .video_design {
         bottom: 130px;
         margin-bottom: -150px;

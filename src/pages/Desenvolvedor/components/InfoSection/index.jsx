@@ -4,7 +4,7 @@ const InfoSection = () => {
     return (
         <section className="container_devinfo">
             <h6 className="title_devinfo">Nossos Serviços</h6>
-            <div className="card_devinfo">
+            <div className="card_devinfoo">
                 <h4 className="title_devcard">Back-end</h4>
                 <div className="description_devcard">
                     <p className="item_devcard">
@@ -13,6 +13,7 @@ const InfoSection = () => {
                         permitindo a interação com serviços web RESTful. REST
                         é a sigla em inglês para "Representational State Transfer",
                         que em português significa "transferência de estado representacional".
+                        <br />
                         Uma API é um conjunto de definições e protocolos usado no desenvolvimento
                         e na integração de aplicações. Às vezes, as APIs são descritas
                         como um contrato entre um provedor e um usuário de informações,
@@ -32,7 +33,7 @@ const InfoSection = () => {
                     </p>
                 </div>
             </div>
-            <div className="card_devinfoo">
+            <div className="card_devinfo">
                 <h4 className="title_devcard">Front-end</h4>
                 <div className="description_devcard">
                     <p className="item_devcard">
