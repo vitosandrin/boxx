@@ -75,8 +75,6 @@ const Design = () => {
 
             <InfoSection />
 
-            <div className="divider_design"></div>
-
             <div onClick={() => setIsOpen(true)} className="button_modaldesign">
                 Como trabalhamos?
             </div>

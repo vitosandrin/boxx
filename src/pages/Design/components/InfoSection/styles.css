@@ -2,6 +2,7 @@
     display: flex;
     flex-direction: column;
     text-align: center;
+    align-items: center;
 
     gap: 5rem;
 }
@@ -18,13 +19,13 @@
     display: flex;
     flex-direction: column;
 
-    width: 70vw;
+    width: 65%;
     padding: 2rem;
     gap: 2rem;
     border-radius: 3rem;
 
     background-color: #111111;
-    box-shadow: 30px -15px #6200ee;
+    box-shadow: 0 -10px #6200ee;
 }
 
 .title_designcard {
@@ -46,8 +47,6 @@
 .item_designcard {
     display: flex;
 
-    max-width: 60vw;
-
     font-size: 1rem;
     line-height: 1.425rem;
     letter-spacing: 1px;
@@ -57,6 +56,9 @@
 }
 
 @media(max-width: 769px) {
+    .card_designinfo{
+        width: 85%;
+    }
     .title_designinfo {
         font-size: 2rem;
     }
@@ -68,11 +70,4 @@
     .title_designcard{
         font-size: 1.4rem;
     }
-}
-
-@media(max-width: 426px){
-    .card_designinfo{
-        width: 93vw;
-        box-shadow: 7px -5px #6200ee;
-    }   
 }
