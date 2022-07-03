@@ -81,7 +81,7 @@
     }
 }
 
-@media(max-width: 426px) {
+@media(max-width: 515px) {
     .box_service {
         width: 90%;
         margin: 1rem;

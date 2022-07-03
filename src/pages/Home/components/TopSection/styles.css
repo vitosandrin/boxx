@@ -75,11 +75,7 @@
     .outline_services {
         flex-direction: column;
     }
-}
-
-@media(max-width: 426px) {
     .box_outline {
         width: 80vw;
     }
-
 }
