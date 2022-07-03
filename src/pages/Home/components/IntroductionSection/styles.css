@@ -57,7 +57,7 @@
     font-size: 1.125rem;
     line-height: 1.425rem;
     letter-spacing: 1px;
-    max-width: 45vw;
+    max-width: 85%;
     color: #e0eff2;
 }
 
@@ -94,7 +94,7 @@
 }
 
 
-@media(max-width: 769px) {
+@media(max-width: 954px) {
     .box_introduction {
         height: 9vh;
     }
