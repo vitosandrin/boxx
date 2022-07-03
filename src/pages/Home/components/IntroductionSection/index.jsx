@@ -27,7 +27,7 @@ const IntroductionSection = () => {
                     <Link to={"/"}>
                         <img className="box_social" src={facebook} alt={facebook} />
                     </Link>
-                    <a href="https://www.instagram.com/boxxsolutions/" target="_blank" rel="noreferrer">
+                    <a href="https://www.instagram.com/boxxsoftwarehouse/" target="_blank" rel="noreferrer">
                         <img className="box_social" src={instagram} alt={instagram} />
                     </a>
                 </div>
