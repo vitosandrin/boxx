@@ -64,16 +64,20 @@
     width: 100%;
     height: 100%;
 }
-@media(max-width: 769px){
+
+@media(max-width: 769px) {
     .description_outline {
         font-size: 0.8rem;
     }
 }
-@media(max-width: 426px) {
+
+@media(max-width: 533px) {
     .outline_services {
         flex-direction: column;
     }
+}
 
+@media(max-width: 426px) {
     .box_outline {
         width: 80vw;
     }
