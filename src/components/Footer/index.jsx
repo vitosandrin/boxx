@@ -16,7 +16,7 @@ const Footer = () => {
                 </a>
             </div>
             <p className="description_footer">
-                .boxx Software House since 2022
+                .boxx Software House &copy; 2022
             </p>
         </footer>
     )
