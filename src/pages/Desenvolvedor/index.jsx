@@ -55,9 +55,7 @@ const Desenvolvedor = () => {
       <div className="video_dev">
         <HeroVideo videoSrc={videodev} />
       </div>
-
-      <div className="divider"></div>
-
+      
       <MainSection />
 
       <Carousel

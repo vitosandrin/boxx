@@ -56,7 +56,6 @@ const Design = () => {
             <div className="video_design">
                 <HeroVideo videoSrc={video} />
             </div>
-            <div className="divider_design"></div>
 
             <MainSection />
 

@@ -6,7 +6,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 5rem;
+    gap: 4rem;
 
     color: #fff;
 
@@ -38,9 +38,6 @@
 }
 
 .video_design {
-    position: relative;
-    bottom: 150px;
-    z-index: 0;
     max-width: 70vw;
 }
 
@@ -54,22 +51,8 @@
 }
 
 
-@media(max-width: 769px) {
-    .body_design{
-        gap: 4rem;
-    }
-    .video_design {
-        bottom: 130px;
-        margin-bottom: -150px;
-    }
-
+@media(max-width: 1024px) {
     .button_modaldesign {
         font-size: 1.4rem;
-    }
-}
-
-@media(max-width: 426px){
-    .video_design{
-        bottom: 120px;
     }
 }
