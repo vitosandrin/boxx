@@ -17,33 +17,33 @@ const FormEmail = () => {
         e.target.reset()
     }
     return (
-        <div>
-            <div className="container">
-                <h2>Contato</h2>
-                <form onSubmit={sendEmail}>
-                    <div>
-                        <label>Nome</label>
-                        <input type="text" autoFocus required placeholder="Nome" name="name" />
-                    </div>
-                    <div>
-                        <div>
-                            <label>Email</label>
-                            <input type="email" required placeholder="Seu email" name="email" />
-                        </div>
-                        <div>
-                            <label>Assunto:</label>
-                            <input type="text" autoFocus required placeholder="Sua dúvida é..." name="subject" />
-                        </div>
-                        <div>
-                            <label>Mensagem</label>
-                            <textarea id="" cols="30" rows="8" required placeholder="Sua mensagem" name="message"></textarea>
-                        </div>
-                        <div>
-                            <input type="submit" value="Enviar mensagem"></input>
-                        </div>
-                    </div>
-                </form>
-            </div>
+        <div className={styles.container_formemail}>
+            <h2 className={styles.title_formemail}>Contate-nos e tire todas suas dúvidas!</h2>
+            <form className={styles.form_control} onSubmit={sendEmail}>
+                <div className={styles.section_formemail}>
+                    <label className={styles.label_formemail}>Nome:</label>
+                    <input className={styles.input_formemail} type="text" autoFocus required placeholder="Nome" name="name" />
+                </div>
+                <div className={styles.section_formemail}>
+                    <label className={styles.label_formemail}>Email:</label>
+                    <input className={styles.input_formemail} type="email" required placeholder="Seu e-mail" name="email" />
+                </div>
+                <div className={styles.section_formemail}>
+                    <label className={styles.label_formemail}>Telefone (whatsapp):</label>
+                    <input className={styles.input_formemail} type="phone" required placeholder="Seu telefone" name="phone" />
+                </div>
+                <div className={styles.section_formemail}>
+                    <label className={styles.label_formemail}>Assunto:</label>
+                    <input className={styles.input_formemail} type="text" autoFocus required placeholder="Sua dúvida é..." name="subject" />
+                </div>
+                <div className={styles.section_formemail}>
+                    <label className={styles.label_formemail}>Mensagem:</label>
+                    <textarea id="" cols="30" rows="8" required placeholder="Sua mensagem" name="message"></textarea>
+                </div>
+                <div>
+                    <input className={styles.input_formemail} type="submit" value="Enviar mensagem"></input>
+                </div>
+            </form>
         </div>
     )
 }
