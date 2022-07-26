@@ -72,6 +72,14 @@
     color: #fff;
 }
 
+.form_check{
+    display: flex;
+    flex-direction: column;
+    font-size: 0.7rem;
+    color: #fff;
+    text-shadow: 0 0 5px #111111;
+}
+
 
 .button_form {
     padding: 0.5rem;

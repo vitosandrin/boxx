@@ -29,7 +29,7 @@ const FormBudget = () => {
                 <div className={styles.section_form}>
                     <input className={styles.input_form} type="tel" required placeholder="Seu telefone" name="phone" />
 
-                    <div>
+                    <div className={styles.form_check}>
                         <input
                             type="checkbox"
                             name="subject"
@@ -38,7 +38,7 @@ const FormBudget = () => {
                         Desenvolvimento
                     </div>
 
-                    <div>
+                    <div className={styles.form_check}>
                         <input
                             type="checkbox"
                             name="subject"
@@ -46,9 +46,66 @@ const FormBudget = () => {
                         />
                         Design
                     </div>
-                    
+
                 </div>
-                <textarea className={styles.input_formtext} id="" cols="30" rows="8" required placeholder="Sua mensagem" name="message"></textarea>
+                <h6 className={styles.title_form}>Quais soluções é de seu interesse?</h6>
+                <div className={styles.section_form}>
+                    <div className={styles.form_check}>
+                        <input
+                            type="checkbox"
+                            name="service"
+                            value="Landing Page"
+                        />
+                        Landing Page
+                    </div>
+
+                    <div className={styles.form_check}>
+                        <input
+                            type="checkbox"
+                            name="service"
+                            value="Site Institucional"
+                        />
+                        Site institucional
+                    </div>
+                    
+                    <div className={styles.form_check}>
+                        <input
+                            type="checkbox"
+                            name="service"
+                            value="E-commerce"
+                        />
+                        E-commerce
+                    </div>
+                    
+                    <div className={styles.form_check}>
+                        <input
+                            type="checkbox"
+                            name="service"
+                            value="API"
+                        />
+                        API
+                    </div>
+                    
+                    <div className={styles.form_check}>
+                        <input
+                            type="checkbox"
+                            name="service"
+                            value="database"
+                        />
+                        Banco de dados
+                    </div>
+                    
+                    <div className={styles.form_check}>
+                        <input
+                            type="checkbox"
+                            name="service"
+                            value="outros"
+                        />
+                        Outros
+                    </div>
+
+                </div>
+                <textarea className={styles.input_formtext} id="" cols="30" rows="8" required placeholder="Conte mais sobre seu projeto..." name="message"></textarea>
                 <input className={styles.button_form} type="submit" value="Enviar mensagem"></input>
             </form>
             <p className={styles.title_form}>Ou entre em contato via: </p>
