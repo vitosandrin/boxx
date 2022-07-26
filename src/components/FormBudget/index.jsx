@@ -48,8 +48,11 @@ const FormBudget = () => {
                     </div>
 
                 </div>
+                
                 <h6 className={styles.title_form}>Quais soluções é de seu interesse?</h6>
+                
                 <div className={styles.section_form}>
+                
                     <div className={styles.form_check}>
                         <input
                             type="checkbox"
@@ -94,6 +97,46 @@ const FormBudget = () => {
                         />
                         Banco de dados
                     </div>
+                
+                </div>
+                
+                <div className={styles.section_form}>
+                    
+                    <div className={styles.form_check}>
+                        <input
+                            type="checkbox"
+                            name="service"
+                            value="WebDesign"
+                        />
+                        WebDesign
+                    </div>
+
+                    <div className={styles.form_check}>
+                        <input
+                            type="checkbox"
+                            name="service"
+                            value="SocialMedia"
+                        />
+                        SocialMedia
+                    </div>
+                    
+                    <div className={styles.form_check}>
+                        <input
+                            type="checkbox"
+                            name="service"
+                            value="Identidade Visual"
+                        />
+                        Identidade Visual
+                    </div>
+                    
+                    <div className={styles.form_check}>
+                        <input
+                            type="checkbox"
+                            name="service"
+                            value="Identidade Visual"
+                        />
+                        Criativos
+                    </div>
                     
                     <div className={styles.form_check}>
                         <input
@@ -103,8 +146,8 @@ const FormBudget = () => {
                         />
                         Outros
                     </div>
-
                 </div>
+
                 <textarea className={styles.input_formtext} id="" cols="30" rows="8" required placeholder="Conte mais sobre seu projeto..." name="message"></textarea>
                 <input className={styles.button_form} type="submit" value="Enviar mensagem"></input>
             </form>
