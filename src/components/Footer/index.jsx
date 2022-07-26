@@ -1,7 +1,5 @@
 import styles from './styles.module.css'
 import logo from './assets/logo.svg'
-import facebook from '../../assets/icons/facebook.svg'
-import instagram from '../../assets/icons/instagram.svg'
 
 const Footer = () => {
     return (

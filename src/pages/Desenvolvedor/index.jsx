@@ -7,7 +7,6 @@ import videodev from '../../assets/video/dev.webm'
 import {
   CarouselComponent,
   CascatleTitle,
-  ContactForm,
   Footer,
   FormEmail,
   HeroVideo,

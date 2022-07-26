@@ -13,7 +13,7 @@ const FormEmail = () => {
             .then((result) => {
                 alert("Mensagem enviada com sucesso! 👍");
             }, (error) => {
-                alert(error.message)
+                alert("Houve um problema em nosso servidor. Tente novamente!")
             });
         e.target.reset()
     }

@@ -8,7 +8,6 @@ import {
     CascatleTitle,
     HeroVideo,
     CarouselComponent,
-    ContactForm,
     Footer,
     Modal,
     FormEmail
