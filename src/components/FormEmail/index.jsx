@@ -22,15 +22,18 @@ const FormEmail = () => {
                 <h2>Contato</h2>
                 <form onSubmit={sendEmail}>
                     <div>
-                        <div>
-                            <label>Nome</label>
-                            <input type="text" autoFocus required placeholder="Nome" name="name" />
-                        </div>
+                        <label>Nome</label>
+                        <input type="text" autoFocus required placeholder="Nome" name="name" />
+                    </div>
+                    <div>
                         <div>
                             <label>Email</label>
                             <input type="email" required placeholder="Seu email" name="email" />
                         </div>
-
+                        <div>
+                            <label>Assunto:</label>
+                            <input type="text" autoFocus required placeholder="Sua dúvida é..." name="subject" />
+                        </div>
                         <div>
                             <label>Mensagem</label>
                             <textarea id="" cols="30" rows="8" required placeholder="Sua mensagem" name="message"></textarea>
