@@ -21,14 +21,6 @@ const Footer = () => {
                     vitosandrin@boxxsoftwarehouse.com
                 </p>
             </section>
-            <div className={styles.footer_links}>
-                <a href="https://www.instagram.com/boxxsoftwarehouse/" target="_blank" rel="noreferrer">
-                    <img className={styles.icon_footer} src={instagram} alt={instagram} />
-                </a>
-                <a href="https://www.instagram.com/boxxsolutions/" target="_blank" rel="noreferrer">
-                    <img className={styles.icon_footer} src={facebook} alt={facebook} />
-                </a>
-            </div>
         </footer>
     )
 }
