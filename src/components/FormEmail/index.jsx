@@ -38,10 +38,10 @@ const FormEmail = () => {
                 </div>
                 <div className={styles.section_formemail}>
                     <label className={styles.label_formemail}>Mensagem:</label>
-                    <textarea id="" cols="30" rows="8" required placeholder="Sua mensagem" name="message"></textarea>
+                    <textarea className={styles.input_formemail} id="" cols="30" rows="8" required placeholder="Sua mensagem" name="message"></textarea>
                 </div>
                 <div>
-                    <input className={styles.input_formemail} type="submit" value="Enviar mensagem"></input>
+                    <input className={styles.button_formemail} type="submit" value="Enviar mensagem"></input>
                 </div>
             </form>
         </div>
