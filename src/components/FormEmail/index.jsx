@@ -27,7 +27,7 @@ const FormEmail = () => {
                     <input className={styles.input_formemail} type="email" required placeholder="Seu e-mail" name="email" />
                 </div>
                 <div className={styles.section_formemail}>
-                    <input className={styles.input_formemail} type="phone" required placeholder="Seu telefone" name="phone" />
+                    <input className={styles.input_formemail} type="tel" required placeholder="Seu telefone" name="phone" />
                     <input className={styles.input_formemail} type="text" autoFocus required placeholder="Sua dúvida é..." name="subject" />
                 </div>
                 <textarea className={styles.input_formtext} id="" cols="30" rows="8" required placeholder="Sua mensagem" name="message"></textarea>

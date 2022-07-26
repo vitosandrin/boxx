@@ -1,9 +1,8 @@
 .container_footer {
     display: flex;
-    flex-direction: column;
     text-align: center;
     align-items: center;
-    gap: 1rem;
+    gap: 2rem;
     border-top: 1px solid #ffffff;
     border-bottom: 1px solid #ffffff;
     padding: 1rem;
@@ -12,15 +11,22 @@
     margin: 1.5rem;
 }
 
+.section_footer{
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    justify-content: flex-start;
+    gap: 0.5rem;
+}
+
 .footer_links {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    width: 100%;
 }
 
 .description_footer{
-    font-size: 0.6rem;
+    font-size: 0.8rem;
 }
 
 

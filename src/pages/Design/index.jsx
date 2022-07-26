@@ -10,7 +10,8 @@ import {
     CarouselComponent,
     ContactForm,
     Footer,
-    Modal
+    Modal,
+    FormEmail
 } from '../../components';
 import Carousel from 'react-elastic-carousel'
 import { ToolsDesign } from '../../assets/data/design'
@@ -80,7 +81,7 @@ const Design = () => {
 
             <div className="divider_design"></div>
 
-            <ContactForm />
+            <FormEmail />
 
             <Footer />
         </div>

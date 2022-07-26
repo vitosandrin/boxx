@@ -9,6 +9,7 @@ import {
   CascatleTitle,
   ContactForm,
   Footer,
+  FormEmail,
   HeroVideo,
   Modal
 } from '../../components';
@@ -79,8 +80,8 @@ const Desenvolvedor = () => {
 
       <div className="divider"></div>
 
-      <ContactForm />
-
+      <FormEmail />
+      
       <Footer />
 
     </div>
