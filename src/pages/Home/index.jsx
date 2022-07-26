@@ -4,7 +4,7 @@ import { useLocation } from 'react-router-dom';
 
 //Global Components
 import {
-    Footer
+    Footer, FormEmail
 } from "../../components";
 
 // Local Components
@@ -34,6 +34,7 @@ const Home = () => {
             <ServiceSection />
             <div className="divider_home" />
             <SolutionSection />
+            <FormEmail />
             <Footer />
         </div>
     )
