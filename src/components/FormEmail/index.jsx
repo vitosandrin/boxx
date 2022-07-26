@@ -23,12 +23,12 @@ const FormEmail = () => {
             <h2 className={styles.title_formemail}>Contate-nos e tire todas suas dúvidas!</h2>
             <form className={styles.form_control} onSubmit={sendEmail}>
                 <div className={styles.section_formemail}>
-                    <input className={styles.input_formemail} type="text" autoFocus required placeholder="Nome" name="name" />
+                    <input className={styles.input_formemail} type="text" required placeholder="Nome" name="name" />
                     <input className={styles.input_formemail} type="email" required placeholder="Seu e-mail" name="email" />
                 </div>
                 <div className={styles.section_formemail}>
                     <input className={styles.input_formemail} type="tel" required placeholder="Seu telefone" name="phone" />
-                    <input className={styles.input_formemail} type="text" autoFocus required placeholder="Sua dúvida é..." name="subject" />
+                    <input className={styles.input_formemail} type="text" required placeholder="Sua dúvida é..." name="subject" />
                 </div>
                 <textarea className={styles.input_formtext} id="" cols="30" rows="8" required placeholder="Sua mensagem" name="message"></textarea>
                 <input className={styles.button_formemail} type="submit" value="Enviar mensagem"></input>
