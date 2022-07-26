@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 const SolutionSection = () => {
     return (
         <section className="wrapper_solution">
-            <h4 className="title_solution">Nossos Serviços</h4>
+            <h2 className="title_solution">Nossos Serviços</h2>
             <div className="container_solution">
                 <div className="box_solution">
                     <h6 className="text_solution">Desenvolvimento</h6>

@@ -10,7 +10,7 @@ import icone8 from '../../assets/icone8.svg'
 const ServiceSection = () => {
     return (
         <section className="container_service">
-            <h4 className="title_service">Por que .boxx?</h4>
+            <h2 className="title_service">Por que .boxx?</h2>
             <div className="box_service">
                 <p className="description_service">
                     .boxx é sua caixa completa para todas soluções necessárias
