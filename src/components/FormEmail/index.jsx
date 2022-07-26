@@ -17,6 +17,7 @@ const FormEmail = () => {
             });
         e.target.reset()
     }
+
     return (
         <div className={styles.container_formemail}>
             <h2 className={styles.title_formemail}>Contate-nos e tire todas suas dúvidas!</h2>
@@ -29,9 +30,7 @@ const FormEmail = () => {
                     <input className={styles.input_formemail} type="phone" required placeholder="Seu telefone" name="phone" />
                     <input className={styles.input_formemail} type="text" autoFocus required placeholder="Sua dúvida é..." name="subject" />
                 </div>
-                <div className={styles.section_formemail}>
-                    <textarea className={styles.input_formemail} id="" cols="30" rows="8" required placeholder="Sua mensagem" name="message"></textarea>
-                </div>
+                <textarea className={styles.input_formtext} id="" cols="30" rows="8" required placeholder="Sua mensagem" name="message"></textarea>
                 <input className={styles.button_formemail} type="submit" value="Enviar mensagem"></input>
             </form>
             <p className={styles.title_formemail}>Ou entre em contato via: </p>
