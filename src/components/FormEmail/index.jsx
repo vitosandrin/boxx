@@ -20,7 +20,7 @@ const FormEmail = () => {
 
     return (
         <div className={styles.container_formemail}>
-            <h2 className={styles.title_formemail}>Contate-nos e tire todas suas dúvidas!</h2>
+            <h2 className={styles.title_formemail}>Contate-nos e faça um orçamento!</h2>
             <form className={styles.form_control} onSubmit={sendEmail}>
                 <div className={styles.section_formemail}>
                     <input className={styles.input_formemail} type="text" required placeholder="Nome" name="name" />
