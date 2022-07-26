@@ -32,12 +32,14 @@
 
 .section_formemail {
     display: flex;
+    align-items: center;
+    width: 100%;
     gap: 1rem;
 }
 
 .input_formemail {
     color: #ffff;
-    max-width: 40vw;
+    max-width: 70%;
     width: 100%;
     background: transparent;
     border-radius: 1rem;
