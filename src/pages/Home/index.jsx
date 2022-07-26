@@ -13,6 +13,7 @@ import MainSection from "./components/MainSection";
 import IntroductionSection from "./components/IntroductionSection";
 import ServiceSection from "./components/ServiceSection";
 import SolutionSection from './components/SolutionSection';
+import AboutSection from './components/AboutSection';
 
 const Home = () => {
     const routePath = useLocation();
@@ -34,6 +35,7 @@ const Home = () => {
             <ServiceSection />
             <div className="divider_home" />
             <SolutionSection />
+            <AboutSection />
             <FormEmail />
             <Footer />
         </div>
