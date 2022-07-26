@@ -12,3 +12,4 @@ export { default as CarouselComponent } from './Carousel';
 export { default as HeroVideo } from './HeroVideo'
 export { default as Float } from './Float'
 export { default as Loader } from './Loader'
+export { default as ContactButton } from './ContactButton'

@@ -1,0 +1,10 @@
+.link_whatsapp {
+    position: fixed;
+    bottom: 3em;
+    right: 3em;
+    transition: ease 0.5s all;
+}
+
+.link_whatsapp:hover {
+    transform: scale(1.4);
+}
