@@ -1,8 +1,9 @@
 .link_whatsapp {
     position: fixed;
-    bottom: 3em;
-    right: 3em;
+    bottom: 2em;
+    right: 2em;
     transition: ease 0.5s all;
+    z-index: 1;
 }
 
 .link_whatsapp:hover {
