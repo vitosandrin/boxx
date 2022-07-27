@@ -1,10 +1,12 @@
 .container_form{
+    position: relative;
+    bottom: 4rem;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     text-align: center;
-    max-width: 85vw;
+    max-width: 95vw;
     gap: 1rem;
     padding: 2rem;
     border-radius: 1rem;
@@ -14,7 +16,7 @@
     background-size: cover;
     -webkit-box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
     box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
-
+    transition: ease 1s all;
 }
 
 .title_form {
@@ -28,6 +30,7 @@
     align-items: center;
     justify-content: center;
     gap: 1rem;
+    width: 100%;
 }
 
 .section_form {
@@ -36,6 +39,7 @@
     justify-content: center;
     width: 100%;
     gap: 1rem;
+    flex-wrap: nowrap;
 }
 
 .input_form {
@@ -79,6 +83,7 @@
     font-size: 0.7rem;
     color: #fff;
     text-shadow: 0 0 5px #111111;
+    width: 100%;
 }
 
 
@@ -92,6 +97,33 @@
     box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
 }
 
+.box_container{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    z-index: 1;
+    background-color: #6200ee;
+    background-position: center;
+    background-size: cover;
+    -webkit-box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+    box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+
+    border-radius: 2rem;
+
+    max-width: 85vw;
+    width: 500px;
+    height: 10vh;
+}
+
+.box_title {
+    font-size: 1rem;
+    color: #e0eff2;
+    text-shadow: -1px -1px 1px rgba(255, 255, 255, .1), 1px 1px 1px rgba(0, 0, 0, .5);
+}
+.box_image {
+    transform: scale(0.6);
+}
+
 .link_contact {
     transition: ease 0.5s all;
 }
@@ -100,8 +132,18 @@
     transform: scale(1.1);
 }
 
+@media(max-width: 425px){
+    .box_title{
+        font-size: 0.8rem;
+    }
+    .box_image{
+        transform: scale(0.4);
+    }
+}
+
 @media(max-width: 375px) {
     .container_formemail {
         padding: 1rem;
     }
 }
+
