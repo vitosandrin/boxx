@@ -1,13 +1,13 @@
-import './styles.css';
+import styles from './styles.module.css';
 
 const InfoSection = () => {
     return (
-        <section className="container_designinfo">
-            <h6 className="title_designinfo">Nossos Serviços</h6>
-            <div className="card_designinfo">
-                <h4 className="title_designcard">Design</h4>
-                <div className="description_designcard">
-                    <p className="item_designcard">
+        <section className={styles.container_designinfo}>
+            <h6 className={styles.title_designinfo}>Nossos Serviços</h6>
+            <div className={styles.card_designinfo}>
+                <h4 className={styles.title_designcard}>Design</h4>
+                <div className={styles.description_designcard}>
+                    <p className={styles.item_designcard}>
                         🌎 UX Design - UX significa "User Experience",
                         em português, "experiência do usúario". User
                         Experience contempla desde o interesse, as pesquisas
@@ -16,7 +16,7 @@ const InfoSection = () => {
                         usuário interage com o produto ou serviço.
                     </p>
 
-                    <p className="item_devcard">
+                    <p className={styles.item_designcard}>
                         🌎 UI Design - UI significa "User Interface", em português, "Interface do Usuário".
                         User Interface contempla tudo aquilo que é utilizado na
                         interação com um produto sendo a intermediária visual entre o

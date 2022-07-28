@@ -1,4 +1,4 @@
-import './styles.css'
+import styles from './styles.module.css'
 import { Link } from "react-router-dom";
 
 //Assets
@@ -10,25 +10,24 @@ import instagram from '../../../../assets/icons/instagram.svg'
 const IntroductionSection = () => {
 
     return (
-        <section className="container_introduction">
-            <img className="img_introduction" alt={astronaut} src={astronaut} />
-            <div className="info_introduction">
-                <h2 className="title_introduction">
+        <section className={styles.container_introduction}>
+            <img className={styles.img_introduction} alt={astronaut} src={astronaut} />
+            <div className={styles.info_introduction}>
+                <h2 className={styles.title_introduction}>
                     O que é .boxx?
                 </h2>
-                <p className="description_introduction">
+                <p className={styles.description_introduction}>
                     A .boxx é uma software house focada em excelência e resultados!
                     Prezamos constantemente pela autenticidade e qualidade de
                     nossas soluções. .boxx é o pacote completo pra quem
-                    deseja acelerar e profissionalizar ainda mais seu negócio
-                    no mercado digital.
+                    deseja acelerar e profissionalizar tarefas e funcionalidades.
                 </p>
-                <div className="box_introduction">
+                <div className={styles.box_introduction}>
                     <Link to={"/"}>
-                        <img className="box_social" src={facebook} alt={facebook} />
+                        <img className={styles.box_social} src={facebook} alt={facebook} />
                     </Link>
                     <a href="https://www.instagram.com/boxxsoftwarehouse/" target="_blank" rel="noreferrer">
-                        <img className="box_social" src={instagram} alt={instagram} />
+                        <img className={styles.box_social} src={instagram} alt={instagram} />
                     </a>
                 </div>
             </div>

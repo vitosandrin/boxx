@@ -1,9 +1,9 @@
-import './styles.css'
+import styles from './styles.module.css'
 
 const Carousel = (props) => {
     return (
-        <div key={props.key} className="card_carousel">
-            <img className="img_carousel" src={props.src} alt={props.alt} />
+        <div key={props.key} className={styles.card_carousel}>
+            <img className={styles.img_carousel} src={props.src} alt={props.alt} />
         </div>
     )
 }

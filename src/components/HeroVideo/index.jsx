@@ -1,10 +1,10 @@
-import "./styles.css"
+import styles from "./styles.module.css"
 
 const HeroVideo = (props) => {
   return (
-    <div className="wrapper_herovideo">
-        <div className="container_herovideo">
-          <video className="herovideo" width="1280" height="720" autoPlay controls muted loop>
+    <div className={styles.wrapper_herovideo}>
+        <div className={styles.container_herovideo}>
+          <video className={styles.herovideo} width="1280" height="720" autoPlay controls muted loop>
               <source src={props.videoSrc} type="video/mp4"/>
           </video>
         </div>

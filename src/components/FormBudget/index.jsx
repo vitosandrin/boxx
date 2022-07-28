@@ -1,9 +1,9 @@
 import emailjs from "emailjs-com";
 import React, { useState } from 'react';
+
 import styles from './styles.module.css'
 import plus from '../../assets/icons/plus.svg'
 import minus from '../../assets/icons/minus.svg'
-import send from '../../assets/icons/send.svg'
 
 const FormBudget = () => {
 

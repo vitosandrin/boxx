@@ -1,21 +1,21 @@
-import './styles.css';
+import styles from './styles.module.css';
 import { Link } from 'react-router-dom';
 
 const SolutionSection = () => {
     return (
-        <section className="wrapper_solution">
-            <h2 className="title_solution">Nossos Serviços</h2>
-            <div className="container_solution">
-                <div className="box_solution">
-                    <h6 className="text_solution">Desenvolvimento</h6>
+        <section className={styles.wrapper_solution}>
+            <h2 className={styles.title_solution}>Nossos Serviços</h2>
+            <div className={styles.container_solution}>
+                <div className={styles.box_solution}>
+                    <h6 className={styles.text_solution}>Desenvolvimento</h6>
                     <Link to={'/dev'}>
-                        <p className="description_solution">Quero saber mais!</p>
+                        <p className={styles.description_solution}>Quero saber mais!</p>
                     </Link>
                 </div>
-                <div className="box_solution">
-                    <h6 className="text_solution">Design</h6>
+                <div className={styles.box_solution}>
+                    <h6 className={styles.text_solution}>Design</h6>
                     <Link to={'/design'}>
-                        <p className="description_solution">Quero saber mais!</p>
+                        <p className={styles.description_solution}>Quero saber mais!</p>
                     </Link>
                 </div>
             </div>

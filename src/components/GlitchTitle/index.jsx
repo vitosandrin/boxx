@@ -1,9 +1,9 @@
-import './styles.css'
+import styles from './styles.module.css'
 
 const GlitchTitle = (props) => {
     return (
-        <div className="glitch_container">
-            <h1 className="glitch_title" data-text={props.text}>{props.text}</h1>
+        <div className={styles.glitch_container}>
+            <h1 className={styles.glitch_title} data-text={props.text}>{props.text}</h1>
         </div>
     )
 }

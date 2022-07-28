@@ -1,4 +1,4 @@
-import './styles.css'
+import styles from './styles.module.css'
 import { useEffect, useState } from 'react';
 import { useLocation } from 'react-router-dom';
 import videodev from '../../assets/video/dev.webm'
@@ -31,9 +31,10 @@ const Desenvolvedor = () => {
   useEffect(() => {
     onTop()
   }, [routePath]);
-  
+
   return (
-    <div className="body_dev">
+    <div className={styles.body_dev}>
+
       <Modal open={isOpen} onClose={() => setIsOpen(false)}>
         <ModalSection />
         <Carousel
@@ -52,35 +53,36 @@ const Desenvolvedor = () => {
 
       <CascatleTitle text={"Dev"} />
 
-      <div className="video_dev">
+      <div className={styles.video_dev}>
         <HeroVideo videoSrc={videodev} />
       </div>
-      
-      <MainSection />
 
-      <Carousel
-        enableAutoPlay={true}
-        autoPlaySpeed={2000}
-        focusOnSelect={true}
-        transitionMs={2000}
-      >
-        {ToolsDev.map(item => {
-          return (
-            <CarouselComponent key={item.id} src={item.image} alt={item.title} />
-          )
-        })}
-      </Carousel>
+      <MainSection />
+      <div className={styles.container_carousel}>
+        <Carousel
+          enableAutoPlay={true}
+          autoPlaySpeed={2000}
+          focusOnSelect={true}
+          transitionMs={2000}
+        >
+          {ToolsDev.map(item => {
+            return (
+              <CarouselComponent key={item.id} src={item.image} alt={item.title} />
+            )
+          })}
+        </Carousel>
+      </div>
 
       <InfoSection />
 
-      <div onClick={() => setIsOpen(true)} className="button_modaldev">
+      <div onClick={() => setIsOpen(true)} className={styles.button_modaldev}>
         Como trabalhamos?
       </div>
 
-      <div className="divider"></div>
+      <div className={styles.divider}></div>
 
       <FormEmail />
-      
+
       <Footer />
 
     </div>

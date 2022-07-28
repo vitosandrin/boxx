@@ -1,13 +1,13 @@
-import './styles.css';
+import styles from './styles.module.css';
 
 const InfoSection = () => {
     return (
-        <section className="container_devinfo">
-            <h6 className="title_devinfo">Nossos Serviços</h6>
-            <div className="card_devinfo">
-                <h4 className="title_devcard">Back-end</h4>
-                <div className="description_devcard">
-                    <p className="item_devcard">
+        <section className={styles.container_devinfo}>
+            <h6 className={styles.title_devinfo}>Nossos Serviços</h6>
+            <div className={styles.card_devinfo}>
+                <h4 className={styles.title_devcard}>Back-end</h4>
+                <div className={styles.description_devcard}>
+                    <p className={styles.item_devcard}>
                         🌎 API RESTful - Nossas API's são produzidas em
                         conformidade com as restrições do estilo de arquitetura REST,
                         permitindo a interação com serviços web RESTful. REST
@@ -21,7 +21,7 @@ const InfoSection = () => {
                         o conteúdo exigido pelo produtor (a resposta).
                     </p>
 
-                    <p className="item_devcard">
+                    <p className={styles.item_devcard}>
                         🌎 Banco de dados - Um banco de dados é uma coleção organizada
                         de informações - ou dados - estruturadas, normalmente
                         armazenadas sobre um domínio específico. Um banco de dados
@@ -33,11 +33,11 @@ const InfoSection = () => {
                     </p>
                 </div>
             </div>
-            <div className="divider"/>
-            <div className="card_devinfoo">
-                <h4 className="title_devcard">Front-end</h4>
-                <div className="description_devcard">
-                    <p className="item_devcard">
+            <div className={styles.divider}/>
+            <div className={styles.card_devinfoo}>
+                <h4 className={styles.title_devcard}>Front-end</h4>
+                <div className={styles.description_devcard}>
+                    <p className={styles.item_devcard}>
                         🌎 SPA - "Single Page Application", que em português significa
                         "aplicação de página única" consiste em uma página web com o
                         objetivo de fornecer uma experiência do usuário tanto em desktop
@@ -45,13 +45,13 @@ const InfoSection = () => {
                         UX (user experience) de qualidade, optamos e indicamos frameworks
                         com  views declarativas e lógica de programação baseada em componentes.
                     </p>
-                    <p className="item_devcard">
+                    <p className={styles.item_devcard}>
                         🌎 Landing Page - que em português significa "página de destino",
                         é muito utilizado para captura de leads e conversão em vendas.
                         É uma página objetiva e assertiva usada para obter atenção do
                         usuário e gerar interesse no conteúdo disposto na página.
                     </p>
-                    <p className="item_devcard">
+                    <p className={styles.item_devcard}>
                         🌎 Websystem/Desktopsystem - que em português significa "sistema web/
                         sistema área de trabalho", é muito utilizidado para sistema de controle
                         de estoque, sistema de controle de caixa, sistema de cadastro de

@@ -1,5 +1,5 @@
 import Portal from "./Portal";
-import "./styles.css";
+import styles from "./styles.module.css";
 import icon from './assets/cancelar.svg';
 
 const Modal = ({ open, children, onClose }) => {
@@ -7,10 +7,10 @@ const Modal = ({ open, children, onClose }) => {
     if (!open) return null;
     return (
         <Portal>
-            <div className="overlay_modal" />
-            <div className="container_modal" >
-                <img src={icon} alt="" className="close_modal" onClick={onClose} />
-                <div className="content_modal">
+            <div className={styles.overlay_modal} />
+            <div className={styles.container_modal} >
+                <img src={icon} alt="" className={styles.close_modal} onClick={onClose} />
+                <div className={styles.content_modal}>
                     {children}
                 </div>
             </div>

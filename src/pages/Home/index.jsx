@@ -1,4 +1,4 @@
-import './styles.css';
+import styles from './styles.module.css';
 import { useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 
@@ -26,15 +26,15 @@ const Home = () => {
     }, [routePath]);
 
     return (
-        <div className="body_home">
+        <div className={styles.body_home}>
             <TopSection />
             <MainSection />
             <IntroductionSection />
             <AboutSection />
             <FormBudget />
-            <div className="divider_home" />
+            <div className={styles.divider_home} />
             <ServiceSection />
-            <div className="divider_home" />
+            <div className={styles.divider_home} />
             <SolutionSection />
             <FormEmail />
             <Footer />

@@ -1,9 +1,9 @@
-import './styles.css'
+import styles from './styles.module.css'
 
 const CascatleTitle = (props) => {
     return (
-        <div className="cascate_container">
-            <h1 className="cascate_title">{props.text}</h1>
+        <div className={styles.cascate_container}>
+            <h1 className={styles.cascate_title}>{props.text}</h1>
         </div>
     )
 }

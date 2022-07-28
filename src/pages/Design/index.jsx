@@ -1,4 +1,4 @@
-import './styles.css'
+import styles from './styles.module.css'
 import { useEffect, useState } from 'react';
 import { useLocation } from 'react-router-dom';
 import video from '../../assets/video/design1.webm'
@@ -34,7 +34,7 @@ const Design = () => {
 
 
     return (
-        <div className="body_design">
+        <div className={styles.body_design}>
             <Modal open={isOpen} onClose={() => setIsOpen(false)}>
                 <ModalSection />
                 <Carousel
@@ -52,25 +52,27 @@ const Design = () => {
             </Modal>
 
             <CascatleTitle text={"Design"} />
-            
-            <div className="video_design">
+
+            <div className={styles.video_design}>
                 <HeroVideo videoSrc={video} />
             </div>
 
             <MainSection />
+            <div className={styles.container_carousel}>
+                <Carousel
+                    enableAutoPlay={true}
+                    autoPlaySpeed={2000}
+                    focusOnSelect={true}
+                    transitionMs={2000}
+                >
+                    {ToolsDesign.map(item => {
+                        return (
+                            <CarouselComponent key={item.id} src={item.image} alt={item.title} />
+                        )
+                    })}
+                </Carousel>
 
-            <Carousel
-                enableAutoPlay={true}
-                autoPlaySpeed={2000}
-                focusOnSelect={true}
-                transitionMs={2000}
-            >
-                {ToolsDesign.map(item => {
-                    return (
-                        <CarouselComponent key={item.id} src={item.image} alt={item.title} />
-                    )
-                })}
-            </Carousel>
+            </div>
 
             <InfoSection />
 
@@ -78,7 +80,7 @@ const Design = () => {
                 Como trabalhamos?
             </div>
 
-            <div className="divider_design"></div>
+            <div className={styles.divider_design}></div>
 
             <FormEmail />
 

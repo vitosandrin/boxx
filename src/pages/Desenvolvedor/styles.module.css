@@ -1,4 +1,4 @@
-.body_design {
+.body_dev {
     background-color: #111111;
 
     height: clamp(100vh, 100%, 100%);
@@ -15,8 +15,7 @@
     background-size: cover;
 }
 
-
-.button_modaldesign {
+.button_modaldev {
     padding: 2rem;
     font-size: 2rem;
     border-radius: 2rem;
@@ -33,15 +32,11 @@
     transition: ease 1s all;
 }
 
-.button_modaldesign:hover {
+.button_modaldev:hover {
     transform: scale(0.9);
 }
 
-.video_design {
-    max-width: 70vw;
-}
-
-.divider_design {
+.divider {
     width: 10rem;
     height: 0.3rem;
 
@@ -50,9 +45,20 @@
     border-radius: 5rem;
 }
 
+.rec.rec-arrow {
+    visibility: hidden;
+}
 
-@media(max-width: 1024px) {
-    .button_modaldesign {
+.video_dev {
+    max-width: 70vw;
+}
+
+.container_carousel{
+    width: 90%;
+}
+
+@media(max-width: 1024px) {   
+    .button_modaldev {
         font-size: 1.4rem;
     }
 }

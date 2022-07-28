@@ -1,20 +1,20 @@
-import './styles.css'
+import styles from './styles.module.css'
 
 import { Link } from "react-router-dom";
 
 const Header = (props) => {
     return (
-        <header className="header_container">
+        <header className={styles.header_container}>
 
             <Link to={"/"}>
-                <img src={props.logo} className="logo_header" alt={props.alt} />
+                <img src={props.logo} className={styles.logo_header} alt={props.alt} />
             </Link>
 
-            <Link className="link_header" to={"/dev"}>
+            <Link className={styles.link_header} to={"/dev"}>
                 <p>Dev</p>
             </Link>
 
-            <Link className="link_header" to={"/design"}>
+            <Link className={styles.link_header} to={"/design"}>
                 <p>Design</p>
             </Link>
         </header>
