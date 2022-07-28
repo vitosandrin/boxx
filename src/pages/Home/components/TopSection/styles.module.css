@@ -4,6 +4,7 @@
     justify-content: center;
     margin: 1rem;
     margin-top: 3rem;
+    gap: 1rem;
 }
 
 .box_outline {
@@ -70,7 +71,7 @@
     }
 }
 
-@media(max-width: 679px) {
+@media(max-width: 693px) {
     .outline_services {
         flex-direction: column;
     }
