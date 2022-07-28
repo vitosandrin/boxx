@@ -5,6 +5,7 @@ import icon from './assets/cancelar.svg';
 const Modal = ({ open, children, onClose }) => {
 
     if (!open) return null;
+    
     return (
         <Portal>
             <div className={styles.overlay_modal} />
