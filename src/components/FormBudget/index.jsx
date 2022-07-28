@@ -1,7 +1,6 @@
 import emailjs from "emailjs-com";
 import React, { useState } from 'react';
 import styles from './styles.module.css'
-import whatsapp from '../../assets/icons/whatsapp.svg'
 import plus from '../../assets/icons/plus.svg'
 import minus from '../../assets/icons/minus.svg'
 
@@ -161,10 +160,6 @@ const FormBudget = () => {
                         <textarea className={styles.input_formtext} id="" cols="30" rows="8" required placeholder="Conte mais sobre seu projeto..." name="message"></textarea>
                         <input className={styles.button_form} type="submit" value="Enviar mensagem"></input>
                     </form>
-                    <p className={styles.title_form}>Ou entre em contato via: </p>
-                    <a className={styles.link_contact} href="https://contate.me/.boxx" target="_blank" rel="noreferrer">
-                        <img src={whatsapp} alt="" />
-                    </a>
                 </div>
             )}
         </>
