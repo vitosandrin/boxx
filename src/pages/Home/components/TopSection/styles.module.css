@@ -2,7 +2,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 5rem;
     margin: 1rem;
     margin-top: 3rem;
 }
@@ -71,7 +70,7 @@
     }
 }
 
-@media(max-width: 533px) {
+@media(max-width: 679px) {
     .outline_services {
         flex-direction: column;
     }
