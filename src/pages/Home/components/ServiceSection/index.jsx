@@ -10,7 +10,7 @@ import icone8 from '../../assets/icone8.svg'
 const ServiceSection = () => {
     return (
         <section className={styles.container_service}>
-            <h2 className={styles.title_service}>Por que .boxx?</h2>
+            <h2 className={styles.title_service}>Por que ser parceiro .boxx?</h2>
             <div className={styles.box_service}>
                 <p className={styles.description_service}>
                     <h3 className={styles.title_info}>Objetividade</h3>
