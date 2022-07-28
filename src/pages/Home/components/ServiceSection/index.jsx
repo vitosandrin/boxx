@@ -1,4 +1,4 @@
-import './styles.css'
+import styles from './styles.module.css'
 
 import icone1 from '../../assets/icone1.svg'
 import icone7 from '../../assets/icone7.svg'
@@ -9,21 +9,23 @@ import icone8 from '../../assets/icone8.svg'
 
 const ServiceSection = () => {
     return (
-        <section className="container_service">
-            <h2 className="title_service">Por que .boxx?</h2>
-            <div className="box_service">
-                <p className="description_service">
-                    .boxx é sua caixa completa para todas soluções necessárias
-                    relacionadas a inovação e atualização do seu negócio no mercado digital.
+        <section className={styles.container_service}>
+            <h2 className={styles.title_service}>Por que .boxx?</h2>
+            <div className={styles.box_service}>
+                <p className={styles.description_service}>
+                    <h3 className={styles.title_info}>Objetividade</h3>
+                    Na .boxx, somos adeptos ao "clean code" e metodologias
+                    ágeis de trabalho.
                 </p>
-                <img className="img_boxservice" src={icone5} alt="" />
+                <img className={styles.img_boxservice} src={icone5} alt="" />
             </div>
 
-            <div className="box_service">
-                <img className="img_boxservice" src={icone1} alt="" />
-                <p className="description_service">
-                    utilizamos tecnologias e ferramentas de última geração visando
-                    uma solução completa e manutenível sem perda de qualidade.
+            <div className={styles.box_service}>
+                <img className={styles.img_boxservice} src={icone1} alt="" />
+                <p className={styles.description_service}>
+                    <h3 className={styles.title_info}>Atualização</h3>
+                    Encontramos a lógica ideal para criar e progredir
+                    um código-fonte eficaz e manutenível. 
                 </p>
             </div>
 
