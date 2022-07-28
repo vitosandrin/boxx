@@ -1,8 +1,8 @@
 import styles from './styles.module.css';
 import { useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
-import planet from '../../assets/json/planet.json'
-import star from '../../assets/json/star.json'
+//import planet from '../../assets/json/planet.json'
+//import star from '../../assets/json/star.json'
 //Global Components
 import {
     Footer, FormBudget, FormEmail, Loader
@@ -33,7 +33,7 @@ const Home = () => {
             <IntroductionSection />
             <AboutSection />
             <FormBudget />
-            <Loader data={planet} />
+            <div className={styles.divider_home} />
             <ServiceSection />
             <div className={styles.divider_home} />
             <SolutionSection />

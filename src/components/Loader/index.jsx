@@ -19,8 +19,8 @@ const Loader = (props) => {
   return (
     <div className={styles.animation}>
       <Lottie options={defaultOptions}
-        height={400}
-        width={400}
+        height={props.height}
+        width={props.width}
         isStopped={animate.isStopped}
         isPaused={animate.isPaused} />
     </div>

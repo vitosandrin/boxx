@@ -1,6 +1,7 @@
 import emailjs from "emailjs-com";
 import React, { useState } from 'react';
-
+import Loader from '../Loader'
+import planet from '../../assets/json/planet.json'
 import styles from './styles.module.css'
 import plus from '../../assets/icons/plus.svg'
 import minus from '../../assets/icons/minus.svg'
@@ -26,6 +27,7 @@ const FormBudget = () => {
     return (
         <>
             <div className={styles.box_container}>
+                <Loader height={50} width={50} data={planet}/>
                 <p className={styles.box_title}>Faça um orçamento sem compromisso!</p>
                 <img className={styles.box_image} onClick={() => show ? setShow(false) : setShow(true)} src={show ? minus : plus} alt="" />
             </div>
