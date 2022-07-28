@@ -25,33 +25,34 @@ const ServiceSection = () => {
                 <p className={styles.description_service}>
                     <h3 className={styles.title_info}>Atualização</h3>
                     Encontramos a lógica ideal para criar e progredir
-                    um código-fonte eficaz e manutenível. 
+                    um código-fonte eficaz e manutenível.
                 </p>
             </div>
 
-            <div className="box_service">
-                <p className="description_service">
-                    indicamos veemente a integração e conexão de nossos serviços,
-                    de forma que, conectados da maneira correta venham a fazer
-                    todo sentido no processo de aceleração de sua empresa.
+            <div className={styles.box_service}>
+                <p className={styles.description_service}>
+                    <h3 className={styles.title_info}>Conexão</h3>
+                    Integrações sofisticadas com excelente acessibilidade
+                    do usuário.
                 </p>
-                <img className="img_boxservice" src={icone7} alt="" />
+                <img className={styles.img_boxservice} src={icone7} alt="" />
             </div>
-            <div className="box_service">
-                <img className="img_boxservice" src={icone4} alt="" />
-                <p className="description_service">
-                    somos adeptos a metodologias ágeis de trabalho para garantir
-                    uma entrega de qualidade e fiel ao que for requisitado.
+            <div className={styles.box_service}>
+                <img className={styles.img_boxservice} src={icone4} alt="" />
+                <p className={styles.description_service}>
+                    <h3 className={styles.title_info}>Exclusividade</h3>
+                    Projetos desenvolvidos exclusivamente, do software ao design.
                 </p>
             </div>
-            <div className="box_service">
-                <p className="description_service">
-                    pensamos fora da caixa beirando a insanidade com propósitos
-                    únicos e ideiais para o sucesso de seu negócio.
+            <div className={styles.box_service}>
+                <p className={styles.description_service}>
+                    <h3 className={styles.title_info}>Competitividade</h3>
+                    Insights em todo cronograma de produção visando
+                    destacar diferenciais competitivos.
                 </p>
-                <img className="img_boxservice" src={icone6} alt="" />
+                <img className={styles.img_boxservice} src={icone6} alt="" />
             </div>
-            <img className="img_service" src={icone8} alt="" />
+            <img className={styles.img_service} src={icone8} alt="" />
         </section>
     )
 }
