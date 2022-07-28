@@ -5,6 +5,8 @@
     text-align: center;
     gap: 3rem;
     overflow: hidden;
+    max-width: 90vw;
+    padding: 1rem;
 }
 
 .title_devmain {
@@ -59,7 +61,7 @@
     }
 }
 
-@media(max-width: 426px) {
+@media(max-width: 673px) {
     .box_devmain {
         flex-direction: column;
     }

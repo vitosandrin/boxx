@@ -3,6 +3,8 @@
     flex-direction: column;
     text-align: center;
     gap: 3rem;
+    max-width: 98vw;
+    padding: 1rem;
 }
 
 .title_designmain {
@@ -45,7 +47,11 @@
     transform: scale(1.1);
 }
 
-@media(max-width: 769px) {
+@media(max-width: 804px) {
+    .box_designmain {
+        flex-direction: column-reverse;
+    }
+
     .title_designmain {
         font-size: 2rem;
     }
@@ -56,12 +62,9 @@
     }
 }
 
-@media(max-width: 426px) {
+@media(max-width: 673px) {
     .title_designmain {
         font-size: 1.5rem;
-    }
-    .box_designmain {
-        flex-direction: column-reverse;
     }
 
     .description_designmain {
