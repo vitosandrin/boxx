@@ -23,9 +23,9 @@ const IntroductionSection = () => {
                     deseja acelerar e profissionalizar tarefas e funcionalidades.
                 </p>
                 <div className={styles.box_introduction}>
-                    <Link to={"/"}>
+                    <a href='https://www.facebook.com/boxxsoftwarehouse' target="_blank" rel="noreferrer">
                         <img className={styles.box_social} src={facebook} alt={facebook} />
-                    </Link>
+                    </a>
                     <a href="https://www.instagram.com/boxxsoftwarehouse/" target="_blank" rel="noreferrer">
                         <img className={styles.box_social} src={instagram} alt={instagram} />
                     </a>
