@@ -10,15 +10,11 @@ const InfoSection = () => {
                     <p className={styles.item_devcard}>
                         🌎 API RESTful - Nossas API's são produzidas em
                         conformidade com as restrições do estilo de arquitetura REST,
-                        permitindo a interação com serviços web RESTful. REST
-                        é a sigla em inglês para "Representational State Transfer",
-                        que em português significa "transferência de estado representacional".
+                        permitindo a interação com serviços web RESTful.
                         <br />
                         Uma API é um conjunto de definições e protocolos usado no desenvolvimento
-                        e na integração de aplicações. Às vezes, as APIs são descritas
-                        como um contrato entre um provedor e um usuário de informações,
-                        estabelecendo o conteúdo exigido pelo consumidor (a chamada) e
-                        o conteúdo exigido pelo produtor (a resposta).
+                        e na integração de aplicações. API é uma interface ideal para que um
+                        sistema se comunique com outro sistema.
                     </p>
 
                     <p className={styles.item_devcard}>

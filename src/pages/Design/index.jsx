@@ -10,7 +10,8 @@ import {
     CarouselComponent,
     Footer,
     Modal,
-    FormEmail
+    FormEmail,
+    FormBudget
 } from '../../components';
 import Carousel from 'react-elastic-carousel'
 import { ToolsDesign } from '../../assets/data/design'
@@ -75,6 +76,8 @@ const Design = () => {
             </div>
 
             <InfoSection />
+
+            <FormBudget />
 
             <div onClick={() => setIsOpen(true)} className={styles.button_modaldesign}>
                 Como trabalhamos?
