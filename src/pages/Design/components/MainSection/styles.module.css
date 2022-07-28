@@ -3,7 +3,7 @@
     flex-direction: column;
     text-align: center;
     gap: 3rem;
-    max-width: 98vw;
+    max-width: 90vw;
     padding: 1rem;
 }
 
@@ -20,6 +20,7 @@
     justify-content: center;
     align-items: center;
     gap: 2rem;
+    width: 100%;
 }
 
 .description_designmain {
@@ -28,7 +29,7 @@
     letter-spacing: 1px;
     color: #e0eff2;
     text-shadow: -1px -1px 1px rgba(255, 255, 255, .1), 1px 1px 1px rgba(0, 0, 0, .5);
-    width: 40%;
+    width: 50%;
     background-color: #111111;
     padding: 2rem;
     -webkit-box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
@@ -68,11 +69,14 @@
     }
 
     .description_designmain {
-        width: 80%;
+        width: 100%;
     }
 }
 
 @media(max-width: 376px) {
+    .container_designmain{
+        width: 95vw;
+    }
     .img_designmain {
         transform: scale(1);
     }
