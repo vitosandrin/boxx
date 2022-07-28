@@ -1,10 +1,11 @@
 import styles from './styles.module.css';
 import { useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
-
+import planet from '../../assets/json/planet.json'
+import star from '../../assets/json/star.json'
 //Global Components
 import {
-    Footer, FormBudget, FormEmail
+    Footer, FormBudget, FormEmail, Loader
 } from "../../components";
 
 // Local Components
@@ -32,7 +33,7 @@ const Home = () => {
             <IntroductionSection />
             <AboutSection />
             <FormBudget />
-            <div className={styles.divider_home} />
+            <Loader data={planet} />
             <ServiceSection />
             <div className={styles.divider_home} />
             <SolutionSection />

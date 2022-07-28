@@ -52,7 +52,6 @@ const ServiceSection = () => {
                 </div>
                 <img className={styles.img_boxservice} src={icone6} alt="" />
             </div>
-            <img className={styles.img_service} src={icone8} alt="" />
         </section>
     )
 }

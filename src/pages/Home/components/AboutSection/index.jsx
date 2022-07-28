@@ -1,5 +1,4 @@
 import styles from './styles.module.css'
-
 //Assets
 import document from '../../assets/document.svg'
 import talk from '../../assets/talk.svg'
