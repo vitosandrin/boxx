@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 import styles from './styles.module.css'
 import plus from '../../assets/icons/plus.svg'
 import minus from '../../assets/icons/minus.svg'
+import send from '../../assets/icons/send.svg'
 
 const FormBudget = () => {
 
@@ -14,7 +15,8 @@ const FormBudget = () => {
         emailjs.sendForm('gmailMessage', 'template_iyexlks', e.target, 'Aq7UK1dYZi08wJdOS')
 
             .then((result) => {
-                alert("Mensagem enviada com sucesso! 👍");
+                alert("Mensagem enviada com sucesso! 👍")
+                setShow(false)
             }, (error) => {
                 alert("Houve um problema em nosso servidor. Tente novamente!")
             });
@@ -29,7 +31,6 @@ const FormBudget = () => {
             </div>
             {show && (
                 <div className={styles.container_form}>
-                    <h2 className={styles.title_form}>Formulário de orçamento:</h2>
                     <form className={styles.form_control} onSubmit={sendEmail}>
                         <div className={styles.section_form}>
                             <input className={styles.input_form} type="text" required placeholder="Seu nome" name="name" />
@@ -68,16 +69,16 @@ const FormBudget = () => {
                                     name="service"
                                     value="Landing Page"
                                 />
-                                Landing Page
+                                LandingPage
                             </div>
 
                             <div className={styles.form_check}>
                                 <input
                                     type="checkbox"
                                     name="service"
-                                    value="Site Institucional"
+                                    value="Website"
                                 />
-                                Site institucional
+                                Website
                             </div>
 
                             <div className={styles.form_check}>
@@ -86,7 +87,7 @@ const FormBudget = () => {
                                     name="service"
                                     value="E-commerce"
                                 />
-                                E-commerce
+                                Loja
                             </div>
 
                             <div className={styles.form_check}>
@@ -97,14 +98,14 @@ const FormBudget = () => {
                                 />
                                 API
                             </div>
-
+                            
                             <div className={styles.form_check}>
                                 <input
                                     type="checkbox"
                                     name="service"
                                     value="database"
                                 />
-                                Banco de dados
+                                Database
                             </div>
 
                         </div>
@@ -135,7 +136,7 @@ const FormBudget = () => {
                                     name="service"
                                     value="Identidade Visual"
                                 />
-                                Identidade Visual
+                                IdVisual
                             </div>
 
                             <div className={styles.form_check}>

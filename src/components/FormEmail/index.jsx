@@ -11,7 +11,7 @@ const FormEmail = () => {
         emailjs.sendForm('gmailMessage', 'template_wc5i59h', e.target, 'Aq7UK1dYZi08wJdOS')
 
             .then((result) => {
-                alert("Mensagem enviada com sucesso! 👍");
+                alert("Mensagem enviada com sucesso! 👍")
             }, (error) => {
                 alert("Houve um problema em nosso servidor. Tente novamente!")
             });
