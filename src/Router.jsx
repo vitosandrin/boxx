@@ -3,7 +3,7 @@ import logo from './assets/icons/logo.svg'
 
 // Global Components
 import { ContactButton, Header } from "./components";
-import { Desenvolvedor, Design, Home } from "./pages";
+import { Desenvolvedor, Design, Home, Landing } from "./pages";
 
 const Router = () => {
     return(
@@ -14,6 +14,7 @@ const Router = () => {
                 <Route path="/" exact element={<Home />} />
                 <Route path="/dev" exact element={<Desenvolvedor />} />
                 <Route path="/design" exact element={<Design />} />
+                <Route path="/landing" exact element={<Landing />} />
             </Routes>
         </BrowserRouter>
     )

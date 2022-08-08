@@ -1,0 +1,29 @@
+.container{
+    background-image: url(../../../../assets/nebula2.webp);
+    background-position: center;
+    background-size: cover;
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 3rem;
+    border-radius: 1.5rem;
+    padding: 1.2rem;
+
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+}
+.title{
+    text-shadow: 0 0 3px #FFFFFF;
+    font-size: 1.6rem;
+    text-align: center;
+}
+
+.logo{
+    box-shadow: #fff;
+    transition: ease 1s all;
+    width: 40px;
+    height: 40px;
+}
+.logo:hover {
+    transform: scale(1.3);
+}
